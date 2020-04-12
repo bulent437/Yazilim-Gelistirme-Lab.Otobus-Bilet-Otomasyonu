@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -49,6 +50,17 @@ namespace SeyruSefer
         private void Form1_Load(object sender, EventArgs e)
         {
             pageControl.SelectedPage = biletSatisPage;
+        }
+
+        private void seferKaydetButton_Click(object sender, EventArgs e)
+        {
+            //https://www.kodlamamerkezi.com/c-net/c-ile-dosya-okuma-ve-yazma-islemleri/
+            //https://www.yazilimkodlama.com/programlama/c-folderbrowserdialog-ile-klasor-icindeki-dosyalari-listeleme/ burdan bakarak sefer sayısını değiştiricez
+            string fileName = @"seferler\sefer1.txt";
+            string writeText = "Sefer Başlangıç:"+seferBas.Text+"\nSefer Varış:"+seferHedef.Text;
+            FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate, FileAccess.Write);
+            fs.Close();
+            File.AppendAllText(fileName, Environment.NewLine + writeText);
         }
     }
 }
