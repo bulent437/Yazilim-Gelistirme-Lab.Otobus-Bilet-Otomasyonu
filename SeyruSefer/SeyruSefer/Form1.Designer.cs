@@ -59,6 +59,7 @@
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.kaptanDegistirmePage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tablePanel5 = new DevExpress.Utils.Layout.TablePanel();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -77,7 +78,6 @@
             this.kaptanDegistirmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.seferGelirButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.seferListelemeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
@@ -104,12 +104,12 @@
             this.kaptanDegistirmePage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).BeginInit();
             this.tablePanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
             this.seferGelirPage.SuspendLayout();
             this.seferListelemePage.SuspendLayout();
             this.biletSatisPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // fluentDesignFormContainer1
@@ -528,6 +528,7 @@
             // 
             // seferSilmePage
             // 
+            this.seferSilmePage.Caption = "seferSilmePage";
             this.seferSilmePage.Controls.Add(this.tablePanel4);
             this.seferSilmePage.Margin = new System.Windows.Forms.Padding(4);
             this.seferSilmePage.Name = "seferSilmePage";
@@ -594,6 +595,7 @@
             // 
             // kaptanDegistirmePage
             // 
+            this.kaptanDegistirmePage.Caption = "kaptanDegistirmePage";
             this.kaptanDegistirmePage.Controls.Add(this.tablePanel5);
             this.kaptanDegistirmePage.Margin = new System.Windows.Forms.Padding(4);
             this.kaptanDegistirmePage.Name = "kaptanDegistirmePage";
@@ -618,6 +620,18 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 79F)});
             this.tablePanel5.Size = new System.Drawing.Size(613, 219);
             this.tablePanel5.TabIndex = 4;
+            // 
+            // textEdit1
+            // 
+            this.tablePanel5.SetColumn(this.textEdit1, 1);
+            this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit1.Location = new System.Drawing.Point(310, 73);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textEdit1.Properties.Appearance.Options.UseFont = true;
+            this.tablePanel5.SetRow(this.textEdit1, 1);
+            this.textEdit1.Size = new System.Drawing.Size(301, 64);
+            this.textEdit1.TabIndex = 8;
             // 
             // simpleButton2
             // 
@@ -808,6 +822,11 @@
             this.seferEklemeButton.Appearance.Pressed.Options.UseTextOptions = true;
             this.seferEklemeButton.Appearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.seferEklemeButton.Appearance.Pressed.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.seferEklemeButton.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl)});
             this.seferEklemeButton.Name = "seferEklemeButton";
             this.seferEklemeButton.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.seferEklemeButton.Text = "Sefer Ekleme";
@@ -885,18 +904,6 @@
             this.seferListelemeButton.Text = "Seferleri Listele";
             this.seferListelemeButton.Click += new System.EventHandler(this.seferListelemeButton_Click);
             // 
-            // textEdit1
-            // 
-            this.tablePanel5.SetColumn(this.textEdit1, 1);
-            this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit1.Location = new System.Drawing.Point(310, 73);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.tablePanel5.SetRow(this.textEdit1, 1);
-            this.textEdit1.Size = new System.Drawing.Size(301, 64);
-            this.textEdit1.TabIndex = 8;
-            // 
             // Form1
             // 
             this.Appearance.Options.UseFont = true;
@@ -940,6 +947,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).EndInit();
             this.tablePanel5.ResumeLayout(false);
             this.tablePanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).EndInit();
             this.seferGelirPage.ResumeLayout(false);
             this.seferGelirPage.PerformLayout();
@@ -948,7 +956,6 @@
             this.biletSatisPage.ResumeLayout(false);
             this.biletSatisPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
