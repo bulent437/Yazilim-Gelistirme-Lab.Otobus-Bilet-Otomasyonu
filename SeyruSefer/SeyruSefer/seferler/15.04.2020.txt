@@ -1,0 +1,51 @@
+
+Sefer No:0
+Sefer Başlangıç:Kocaeli
+Sefer Varış:İstanbul
+Sefer Tarih:15.04.2020
+Saat: 15:15
+Kapasite: 40
+Plaka: 15
+Kaptan: 15
+Bilet Fiyatı :51
+Koltuk1
+Koltuk2
+Koltuk3
+Koltuk4
+Koltuk5
+Koltuk6
+Koltuk7
+Koltuk8
+Koltuk9
+Koltuk10
+Koltuk11
+Koltuk12
+Koltuk13
+Koltuk14
+Koltuk15
+Koltuk16
+Koltuk17
+Koltuk18
+Koltuk19
+Koltuk20
+Koltuk21
+Koltuk22
+Koltuk23
+Koltuk24
+Koltuk25
+Koltuk26
+Koltuk27
+Koltuk28
+Koltuk29
+Koltuk30
+Koltuk31
+Koltuk32
+Koltuk33
+Koltuk34
+Koltuk35
+Koltuk36
+Koltuk37
+Koltuk38
+Koltuk39
+Koltuk40
+-

@@ -17,8 +17,9 @@ namespace SeyruSefer
             InitializeComponent();
             
         }
+
         #region Sayfa Kontrolü
-        
+
         private void seferEklemeButton_Click(object sender, EventArgs e)
         {
             pageControl.SelectedPage = seferEklemePage;
@@ -60,22 +61,49 @@ namespace SeyruSefer
         {
             //https://www.kodlamamerkezi.com/c-net/c-ile-dosya-okuma-ve-yazma-islemleri/
             //https://www.yazilimkodlama.com/programlama/c-folderbrowserdialog-ile-klasor-icindeki-dosyalari-listeleme/ burdan bakarak sefer sayısını değiştiricez
+            //https://www.muslu.net/2015/03/c-dosya-kontrol-var-mi-yok-mu.html
+            //https://trmsma.wordpress.com/2017/08/04/c-ta-indexof-metodu/
 
-            string tarih = seferTarih.Text+ ".txt";
-            string fileName = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\" + tarih;
-            string writeText = "Sefer Başlangıç:" + seferBas.Text + "\nSefer Varış:" + seferHedef.Text + "\nSefer Tarih:" + seferTarih.Text + "\nSaat: " + seferSaat.Text + "\nKapasite: " + seferKapasite.Text +
+            int seferNo =0;
+            string tarih = seferTarih.Text + ".txt";
+            string dosya = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\" + tarih;
+            FileStream fs ;
+            if (File.Exists(dosya) == true) // dizindeki dosya var mı ?
+            {
+                fs = new FileStream(dosya, FileMode.Open, FileAccess.Read);
+                StreamReader sw = new StreamReader(fs);
+                string yazi = sw.ReadLine();
+                while (yazi != null)
+                {
+                    if (yazi.IndexOf("Sefer No:") == 0)
+                    {
+                        seferNo = Convert.ToInt32(yazi.Substring((yazi.IndexOf(":")+1), (yazi.Length-9)));
+                        seferNo++;
+                    }
+                    yazi = sw.ReadLine();
+                }
+                sw.Close();
+                fs.Close();
+            }
+            else
+            {
+                seferNo = 0;
+            }
+            
+            
+            string writeText ="Sefer No:"+ seferNo+ "\nSefer Başlangıç:" + seferBas.Text + "\nSefer Varış:" + seferHedef.Text + "\nSefer Tarih:" + seferTarih.Text + "\nSaat: " + seferSaat.Text + "\nKapasite: " + seferKapasite.Text +
                 "\nPlaka: " + seferPlaka.Text + "\nKaptan: " + seferKaptan.Text + "\nBilet Fiyatı :" + seferBiletFiyat.Text;
      
-            FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate, FileAccess.Write); 
+            FileStream fs1 = new FileStream(dosya, FileMode.OpenOrCreate, FileAccess.Write); 
             int koltuksayisi = Convert.ToInt32(seferKapasite.Text);
-            fs.Close();
-            File.AppendAllText(fileName, Environment.NewLine + writeText);
+            fs1.Close();
+            File.AppendAllText(dosya, Environment.NewLine + writeText);
             {
                 for (int i = 1; i <= koltuksayisi; i++)
                 {               
-                    File.AppendAllText(fileName, Environment.NewLine + "Koltuk" + i);
+                    File.AppendAllText(dosya, Environment.NewLine + "Koltuk" + i);
                 }
-                File.AppendAllText(fileName, Environment.NewLine + "-");
+                File.AppendAllText(dosya, Environment.NewLine + "-");
             }
            
 
