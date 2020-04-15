@@ -1,0 +1,43 @@
+
+Sefer Başlangıç:İzmir
+Sefer Varış:İstanbul
+Sefer Tarih:14.04.2020
+Saat: 12:15
+Kapasite: 12
+Plaka: 12
+Kaptan: 12
+Otobüs :21
+Koltuk1
+Koltuk2
+Koltuk3
+Koltuk4
+Koltuk5
+Koltuk6
+Koltuk7
+Koltuk8
+Koltuk9
+Koltuk10
+Koltuk11
+Koltuk12
+-
+Sefer Başlangıç:İzmir
+Sefer Varış:İstanbul
+Sefer Tarih:14.04.2020
+Saat: 12:15
+Kapasite: 12
+Plaka: 12
+Kaptan: 12
+Otobüs :21
+Koltuk1
+Koltuk2
+Koltuk3
+Koltuk4
+Koltuk5
+Koltuk6
+Koltuk7
+Koltuk8
+Koltuk9
+Koltuk10
+Koltuk11
+Koltuk12
+-

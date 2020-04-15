@@ -17,7 +17,8 @@ namespace SeyruSefer
             InitializeComponent();
             
         }
-
+        #region Sayfa Kontrolü
+        
         private void seferEklemeButton_Click(object sender, EventArgs e)
         {
             pageControl.SelectedPage = seferEklemePage;
@@ -53,16 +54,17 @@ namespace SeyruSefer
             pageControl.SelectedPage = biletSatisPage;
 
         }
-
+        #endregion
+        #region Sefer Kaydetme
         private void seferKaydetButton_Click(object sender, EventArgs e)
         {
             //https://www.kodlamamerkezi.com/c-net/c-ile-dosya-okuma-ve-yazma-islemleri/
             //https://www.yazilimkodlama.com/programlama/c-folderbrowserdialog-ile-klasor-icindeki-dosyalari-listeleme/ burdan bakarak sefer sayısını değiştiricez
-            string tarih = DateTime.Now.ToShortDateString();
-            string deneme = tarih+".txt";
-            string fileName = @"C:\Users\C\source\repos\bulent437\YazGel\SeyruSefer\SeyruSefer\seferler\"+deneme;
+
+            string tarih = seferTarih.Text+ ".txt";
+            string fileName = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\" + tarih;
             string writeText = "Sefer Başlangıç:" + seferBas.Text + "\nSefer Varış:" + seferHedef.Text + "\nSefer Tarih:" + seferTarih.Text + "\nSaat: " + seferSaat.Text + "\nKapasite: " + seferKapasite.Text +
-                "\nPlaka: " + seferPlaka.Text + "\nKaptan: " + seferKaptan.Text + "\nOtobüs :" + seferOtobus.Text;
+                "\nPlaka: " + seferPlaka.Text + "\nKaptan: " + seferKaptan.Text + "\nBilet Fiyatı :" + seferBiletFiyat.Text;
      
             FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate, FileAccess.Write); 
             int koltuksayisi = Convert.ToInt32(seferKapasite.Text);
@@ -74,10 +76,11 @@ namespace SeyruSefer
                     File.AppendAllText(fileName, Environment.NewLine + "Koltuk" + i);
                 }
                 File.AppendAllText(fileName, Environment.NewLine + "-");
-
             }
-
+           
 
         }
+        #endregion
+
     }
 }
