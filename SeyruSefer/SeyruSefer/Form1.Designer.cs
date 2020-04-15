@@ -54,8 +54,11 @@
             this.seferBiletFiyat = new DevExpress.XtraEditors.TextEdit();
             this.seferSilmePage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tablePanel4 = new DevExpress.Utils.Layout.TablePanel();
+            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.seferSilButon = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.kaptanDegistirmePage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tablePanel5 = new DevExpress.Utils.Layout.TablePanel();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
@@ -66,19 +69,22 @@
             this.seferGelirPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.seferListelemePage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.SeferTarihiListele = new DevExpress.XtraEditors.DateEdit();
+            this.button1 = new System.Windows.Forms.Button();
             this.biletSatisPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.biletSatisButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.seferEklemeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.seferListelemeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.seferSilmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.kaptanDegistirmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.seferGelirButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.seferListelemeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.sefericerikListele = new System.Windows.Forms.ComboBox();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
@@ -101,6 +107,9 @@
             this.seferSilmePage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
             this.tablePanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             this.kaptanDegistirmePage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).BeginInit();
             this.tablePanel5.SuspendLayout();
@@ -108,10 +117,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
             this.seferGelirPage.SuspendLayout();
             this.seferListelemePage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SeferTarihiListele.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SeferTarihiListele.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // fluentDesignFormContainer1
@@ -559,6 +567,36 @@
             this.tablePanel4.Size = new System.Drawing.Size(613, 205);
             this.tablePanel4.TabIndex = 3;
             // 
+            // comboBoxEdit1
+            // 
+            this.tablePanel4.SetColumn(this.comboBoxEdit1, 1);
+            this.comboBoxEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxEdit1.Location = new System.Drawing.Point(310, 71);
+            this.comboBoxEdit1.Name = "comboBoxEdit1";
+            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.tablePanel4.SetRow(this.comboBoxEdit1, 1);
+            this.comboBoxEdit1.Size = new System.Drawing.Size(301, 62);
+            this.comboBoxEdit1.TabIndex = 5;
+            // 
+            // dateEdit1
+            // 
+            this.tablePanel4.SetColumn(this.dateEdit1, 1);
+            this.dateEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateEdit1.EditValue = null;
+            this.dateEdit1.Location = new System.Drawing.Point(311, 4);
+            this.dateEdit1.Margin = new System.Windows.Forms.Padding(4);
+            this.dateEdit1.Name = "dateEdit1";
+            this.dateEdit1.Properties.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateEdit1.Properties.Appearance.Options.UseFont = true;
+            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.tablePanel4.SetRow(this.dateEdit1, 0);
+            this.dateEdit1.Size = new System.Drawing.Size(299, 60);
+            this.dateEdit1.TabIndex = 4;
+            // 
             // seferSilButon
             // 
             this.seferSilButon.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -588,6 +626,23 @@
             this.labelControl2.Size = new System.Drawing.Size(299, 60);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "SİLİNECEK SEFERİN GÜNÜ";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseTextOptions = true;
+            this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel4.SetColumn(this.labelControl3, 0);
+            this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl3.Location = new System.Drawing.Point(4, 72);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl3.Name = "labelControl3";
+            this.tablePanel4.SetRow(this.labelControl3, 1);
+            this.labelControl3.Size = new System.Drawing.Size(299, 60);
+            this.labelControl3.TabIndex = 1;
+            this.labelControl3.Text = "SİLİNECEK SEFER";
             // 
             // kaptanDegistirmePage
             // 
@@ -707,20 +762,73 @@
             // 
             // seferListelemePage
             // 
-            this.seferListelemePage.Caption = "seferListelemePage";
+            this.seferListelemePage.Controls.Add(this.sefericerikListele);
+            this.seferListelemePage.Controls.Add(this.labelControl6);
+            this.seferListelemePage.Controls.Add(this.button2);
+            this.seferListelemePage.Controls.Add(this.label1);
             this.seferListelemePage.Controls.Add(this.labelControl5);
+            this.seferListelemePage.Controls.Add(this.SeferTarihiListele);
+            this.seferListelemePage.Controls.Add(this.button1);
             this.seferListelemePage.Margin = new System.Windows.Forms.Padding(4);
             this.seferListelemePage.Name = "seferListelemePage";
             this.seferListelemePage.Size = new System.Drawing.Size(613, 562);
             // 
+            // labelControl6
+            // 
+            this.labelControl6.Location = new System.Drawing.Point(68, 105);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(46, 13);
+            this.labelControl6.TabIndex = 10;
+            this.labelControl6.Text = "Sefer Seç";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(291, 95);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(101, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "LİSTELE";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(500, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "label1";
+            // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(368, 382);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl5.Location = new System.Drawing.Point(68, 64);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(63, 13);
-            this.labelControl5.TabIndex = 1;
-            this.labelControl5.Text = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(44, 13);
+            this.labelControl5.TabIndex = 6;
+            this.labelControl5.Text = "Tarih Seç";
+            // 
+            // SeferTarihiListele
+            // 
+            this.SeferTarihiListele.EditValue = null;
+            this.SeferTarihiListele.Location = new System.Drawing.Point(155, 57);
+            this.SeferTarihiListele.Name = "SeferTarihiListele";
+            this.SeferTarihiListele.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.SeferTarihiListele.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.SeferTarihiListele.Size = new System.Drawing.Size(121, 20);
+            this.SeferTarihiListele.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(291, 54);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "SEFER GETİR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // biletSatisPage
             // 
@@ -787,10 +895,10 @@
             this.accordionControlElement1.Appearance.Pressed.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.seferEklemeButton,
+            this.seferListelemeButton,
             this.seferSilmeButton,
             this.kaptanDegistirmeButton,
-            this.seferGelirButton,
-            this.seferListelemeButton});
+            this.seferGelirButton});
             this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "Sefer İşlemleri";
@@ -808,6 +916,7 @@
             this.seferEklemeButton.Appearance.Pressed.Options.UseTextOptions = true;
             this.seferEklemeButton.Appearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.seferEklemeButton.Appearance.Pressed.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.seferEklemeButton.Expanded = true;
             this.seferEklemeButton.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
@@ -817,6 +926,24 @@
             this.seferEklemeButton.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.seferEklemeButton.Text = "Sefer Ekleme";
             this.seferEklemeButton.Click += new System.EventHandler(this.seferEklemeButton_Click);
+            // 
+            // seferListelemeButton
+            // 
+            this.seferListelemeButton.Appearance.Disabled.Font = new System.Drawing.Font("Verdana", 13F, System.Drawing.FontStyle.Bold);
+            this.seferListelemeButton.Appearance.Disabled.Options.UseFont = true;
+            this.seferListelemeButton.Appearance.Hovered.Font = new System.Drawing.Font("Verdana", 13F, System.Drawing.FontStyle.Bold);
+            this.seferListelemeButton.Appearance.Hovered.Options.UseFont = true;
+            this.seferListelemeButton.Appearance.Normal.Font = new System.Drawing.Font("Verdana", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.seferListelemeButton.Appearance.Normal.Options.UseFont = true;
+            this.seferListelemeButton.Appearance.Pressed.Font = new System.Drawing.Font("Verdana", 13F, System.Drawing.FontStyle.Bold);
+            this.seferListelemeButton.Appearance.Pressed.Options.UseFont = true;
+            this.seferListelemeButton.Appearance.Pressed.Options.UseTextOptions = true;
+            this.seferListelemeButton.Appearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.seferListelemeButton.Appearance.Pressed.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.seferListelemeButton.Name = "seferListelemeButton";
+            this.seferListelemeButton.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.seferListelemeButton.Text = "Seferleri Listele";
+            this.seferListelemeButton.Click += new System.EventHandler(this.seferListelemeButton_Click);
             // 
             // seferSilmeButton
             // 
@@ -872,70 +999,14 @@
             this.seferGelirButton.Text = "Sefer Gelir Hesaplama";
             this.seferGelirButton.Click += new System.EventHandler(this.seferGelirButton_Click);
             // 
-            // seferListelemeButton
+            // sefericerikListele
             // 
-            this.seferListelemeButton.Appearance.Disabled.Font = new System.Drawing.Font("Verdana", 13F, System.Drawing.FontStyle.Bold);
-            this.seferListelemeButton.Appearance.Disabled.Options.UseFont = true;
-            this.seferListelemeButton.Appearance.Hovered.Font = new System.Drawing.Font("Verdana", 13F, System.Drawing.FontStyle.Bold);
-            this.seferListelemeButton.Appearance.Hovered.Options.UseFont = true;
-            this.seferListelemeButton.Appearance.Normal.Font = new System.Drawing.Font("Verdana", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.seferListelemeButton.Appearance.Normal.Options.UseFont = true;
-            this.seferListelemeButton.Appearance.Pressed.Font = new System.Drawing.Font("Verdana", 13F, System.Drawing.FontStyle.Bold);
-            this.seferListelemeButton.Appearance.Pressed.Options.UseFont = true;
-            this.seferListelemeButton.Appearance.Pressed.Options.UseTextOptions = true;
-            this.seferListelemeButton.Appearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.seferListelemeButton.Appearance.Pressed.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.seferListelemeButton.Name = "seferListelemeButton";
-            this.seferListelemeButton.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.seferListelemeButton.Text = "Seferleri Listele";
-            this.seferListelemeButton.Click += new System.EventHandler(this.seferListelemeButton_Click);
-            // 
-            // dateEdit1
-            // 
-            this.tablePanel4.SetColumn(this.dateEdit1, 1);
-            this.dateEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(311, 4);
-            this.dateEdit1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateEdit1.Properties.Appearance.Options.UseFont = true;
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.tablePanel4.SetRow(this.dateEdit1, 0);
-            this.dateEdit1.Size = new System.Drawing.Size(299, 60);
-            this.dateEdit1.TabIndex = 4;
-            // 
-            // comboBoxEdit1
-            // 
-            this.tablePanel4.SetColumn(this.comboBoxEdit1, 1);
-            this.comboBoxEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxEdit1.Location = new System.Drawing.Point(310, 71);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.tablePanel4.SetRow(this.comboBoxEdit1, 1);
-            this.comboBoxEdit1.Size = new System.Drawing.Size(301, 62);
-            this.comboBoxEdit1.TabIndex = 5;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseTextOptions = true;
-            this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel4.SetColumn(this.labelControl3, 0);
-            this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl3.Location = new System.Drawing.Point(4, 72);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl3.Name = "labelControl3";
-            this.tablePanel4.SetRow(this.labelControl3, 1);
-            this.labelControl3.Size = new System.Drawing.Size(299, 60);
-            this.labelControl3.TabIndex = 1;
-            this.labelControl3.Text = "SİLİNECEK SEFER";
+            this.sefericerikListele.FormattingEnabled = true;
+            this.sefericerikListele.Location = new System.Drawing.Point(155, 97);
+            this.sefericerikListele.Name = "sefericerikListele";
+            this.sefericerikListele.Size = new System.Drawing.Size(121, 21);
+            this.sefericerikListele.TabIndex = 11;
+            this.sefericerikListele.Text = "Sefer No";
             // 
             // Form1
             // 
@@ -975,6 +1046,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).EndInit();
             this.tablePanel4.ResumeLayout(false);
             this.tablePanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             this.kaptanDegistirmePage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).EndInit();
             this.tablePanel5.ResumeLayout(false);
@@ -985,10 +1059,9 @@
             this.seferGelirPage.PerformLayout();
             this.seferListelemePage.ResumeLayout(false);
             this.seferListelemePage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SeferTarihiListele.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SeferTarihiListele.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1014,7 +1087,6 @@
         private DevExpress.XtraBars.Navigation.NavigationPage biletSatisPage;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.DateEdit seferTarih;
         private DevExpress.XtraEditors.ComboBoxEdit seferHedef;
         private DevExpress.XtraEditors.ComboBoxEdit seferBas;
@@ -1046,6 +1118,13 @@
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
         private DevExpress.XtraEditors.DateEdit dateEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
+        private System.Windows.Forms.Button button1;
+        private DevExpress.XtraEditors.DateEdit SeferTarihiListele;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private System.Windows.Forms.ComboBox sefericerikListele;
     }
 }
 
