@@ -18,7 +18,8 @@ namespace SeyruSefer
             InitializeComponent();
 
         }
-
+        // string yol = @"C:\Users\C\source\repos\bulent437\YazGel\SeyruSefer\SeyruSefer\seferler\";
+        string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
         #region Sayfa Kontrolü
 
         private void seferEklemeButton_Click(object sender, EventArgs e)
@@ -121,12 +122,12 @@ namespace SeyruSefer
         }
         #endregion
 
-        private void button1_Click(object sender, EventArgs e)
+        private void seferGetirButton_Click(object sender, EventArgs e)
         {
-            sefericerikListele.Items.Clear();
+            sefericerikListele.Properties.Items.Clear();
             ArrayList Seferler = new ArrayList();
             string dosyaAdi = SeferTarihiListele.Text + ".txt";
-            string dosya = @"C:\Users\C\source\repos\bulent437\YazGel\SeyruSefer\SeyruSefer\seferler\" + dosyaAdi;
+            string dosya = yol + dosyaAdi;
             FileStream fs;
             if (File.Exists(dosya) == true)
             {
@@ -137,7 +138,7 @@ namespace SeyruSefer
                 {
                     if (yazi.IndexOf("Sefer No:") == 0)
                     {
-                        Seferler.Add ( yazi.Substring((yazi.IndexOf(":") + 1), (yazi.Length - 9)));
+                        Seferler.Add(yazi.Substring((yazi.IndexOf(":") + 1), (yazi.Length - 9)));
                         //seferno = Convert.ToInt32(yazi.Substring((yazi.IndexOf(":") + 1), (yazi.Length - 9)));
 
                     }
@@ -146,39 +147,40 @@ namespace SeyruSefer
                 }
                 foreach (String eleman in Seferler)
                 {
-                    sefericerikListele.Items.Add("Sefer No: " +eleman);
+                    sefericerikListele.Properties.Items.Add("Sefer No: " + eleman);
                 }
                 sw.Close();
                 fs.Close();
             }
-                
-                else { MessageBox.Show("Bu tarihte kayıt bulunmamaktadır."); }
+
+            else { MessageBox.Show("Bu tarihte kayıt bulunmamaktadır."); }
 
 
-            }
+        }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void seferListeleButton_Click(object sender, EventArgs e)
         {
-          /*  ArrayList Koltuklar = new ArrayList();
-            string dosyaAdi = SeferTarihiListele.Text + ".txt";
-            string dosya = @"C:\Users\C\source\repos\bulent437\YazGel\SeyruSefer\SeyruSefer\seferler\" + dosyaAdi;
-            FileStream fs;
-            if (File.Exists(dosya) == true)
-            {
-                fs = new FileStream(dosya, FileMode.Open, FileAccess.Read);
-                StreamReader sw = new StreamReader(fs);
-                string yazi = sw.ReadLine();
-                while (yazi =="Sefer No:"+ sefericerikListele.SelectedItem+1)
-                {
-                    if (yazi.IndexOf("Sefer No:"+sefericerikListele.SelectedItem) == 0)
-                    {
-                        Koltuklar.Add(yazi.Substring((yazi.IndexOf(":") + 1), (yazi.Length - 9)));
-                        //seferno = Convert.ToInt32(yazi.Substring((yazi.IndexOf(":") + 1), (yazi.Length - 9)));
+            /*  ArrayList Koltuklar = new ArrayList();
+              string dosyaAdi = SeferTarihiListele.Text + ".txt";
+              string dosya = @"C:\Users\C\source\repos\bulent437\YazGel\SeyruSefer\SeyruSefer\seferler\" + dosyaAdi;
+              FileStream fs;
+              if (File.Exists(dosya) == true)
+              {
+                  fs = new FileStream(dosya, FileMode.Open, FileAccess.Read);
+                  StreamReader sw = new StreamReader(fs);
+                  string yazi = sw.ReadLine();
+                  while (yazi =="Sefer No:"+ sefericerikListele.SelectedItem+1)
+                  {
+                      if (yazi.IndexOf("Sefer No:"+sefericerikListele.SelectedItem) == 0)
+                      {
+                          Koltuklar.Add(yazi.Substring((yazi.IndexOf(":") + 1), (yazi.Length - 9)));
+                          //seferno = Convert.ToInt32(yazi.Substring((yazi.IndexOf(":") + 1), (yazi.Length - 9)));
 
-                    }
-                    yazi = sw.ReadLine();
+                      }
+                      yazi = sw.ReadLine();
 
-                }
-
-            }*/
+                  }
+                  */
+        }
     }
+}
