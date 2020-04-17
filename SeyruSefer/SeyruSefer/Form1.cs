@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Collections;
+using DevExpress.XtraReports.UI;
 
 namespace SeyruSefer
 {
@@ -121,9 +122,11 @@ namespace SeyruSefer
             }
         }
         #endregion
-
+        #region Sefer Listeleme
+        ArrayList SeferKoltuk =new ArrayList();
         private void seferGetirButton_Click(object sender, EventArgs e)
         {
+            SeferKoltuk.Clear();
             sefericerikListele.Properties.Items.Clear();
             ArrayList Seferler = new ArrayList();
             string dosyaAdi = SeferTarihiListele.Text + ".txt";
@@ -139,15 +142,19 @@ namespace SeyruSefer
                     if (yazi.IndexOf("Sefer No:") == 0)
                     {
                         Seferler.Add(yazi.Substring((yazi.IndexOf(":") + 1), (yazi.Length - 9)));
+                        SeferKoltuk.Add(yazi);
                         //seferno = Convert.ToInt32(yazi.Substring((yazi.IndexOf(":") + 1), (yazi.Length - 9)));
-
+                    }
+                    else if (yazi.IndexOf("Koltuk")==0)
+                    {
+                        SeferKoltuk.Add(yazi);
                     }
                     yazi = sw.ReadLine();
 
                 }
                 foreach (String eleman in Seferler)
                 {
-                    sefericerikListele.Properties.Items.Add("Sefer No: " + eleman);
+                    sefericerikListele.Properties.Items.Add("Sefer No:" + eleman);
                 }
                 sw.Close();
                 fs.Close();
@@ -157,30 +164,30 @@ namespace SeyruSefer
 
 
         }
-
+        
         private void seferListeleButton_Click(object sender, EventArgs e)
         {
-            /*  ArrayList Koltuklar = new ArrayList();
-              string dosyaAdi = SeferTarihiListele.Text + ".txt";
-              string dosya = @"C:\Users\C\source\repos\bulent437\YazGel\SeyruSefer\SeyruSefer\seferler\" + dosyaAdi;
-              FileStream fs;
-              if (File.Exists(dosya) == true)
-              {
-                  fs = new FileStream(dosya, FileMode.Open, FileAccess.Read);
-                  StreamReader sw = new StreamReader(fs);
-                  string yazi = sw.ReadLine();
-                  while (yazi =="Sefer No:"+ sefericerikListele.SelectedItem+1)
-                  {
-                      if (yazi.IndexOf("Sefer No:"+sefericerikListele.SelectedItem) == 0)
-                      {
-                          Koltuklar.Add(yazi.Substring((yazi.IndexOf(":") + 1), (yazi.Length - 9)));
-                          //seferno = Convert.ToInt32(yazi.Substring((yazi.IndexOf(":") + 1), (yazi.Length - 9)));
-
-                      }
-                      yazi = sw.ReadLine();
-
-                  }
-                  */
+            for (int i = 0; i < SeferKoltuk.Count; i++) 
+            { 
+                if(SeferKoltuk[i].ToString()==sefericerikListele.Text)//seçilen sefer ile textden aldığımız sefer eşleşince içinde tekrar döngü oluşturucaz
+                {
+                    i++;
+                    for (int j = i; j < 51; j++) 
+                    //sıradaki sefere gelene kadarki bütün koltukları listele(göstermek için kullancaz)
+                    //daha sonra bilet satışı için kullancaz aynı kodu bu sefer butonlara event ekleyicez tıklanabilcek
+                    //http://www.gorselprogramlama.com/kod-ile-buton-olusturma-c-net/
+                    if (SeferKoltuk[j].ToString().IndexOf("Koltuk") == 0)
+                    {
+                        Label a = new Label();
+                        a.Top = 10 * j;
+                        a.Text = SeferKoltuk[j].ToString();                       
+                        panel1.Controls.Add(a);
+                    }
+                    else
+                        break;
+                }
+            }
         }
+        #endregion
     }
 }

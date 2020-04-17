@@ -85,7 +85,7 @@
             this.seferSilmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.kaptanDegistirmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.seferGelirButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
@@ -770,7 +770,7 @@
             // 
             // seferListelemePage
             // 
-            this.seferListelemePage.Controls.Add(this.tableLayoutPanel1);
+            this.seferListelemePage.Controls.Add(this.panel1);
             this.seferListelemePage.Controls.Add(this.tablePanel6);
             this.seferListelemePage.Margin = new System.Windows.Forms.Padding(4);
             this.seferListelemePage.Name = "seferListelemePage";
@@ -1060,18 +1060,13 @@
             this.seferGelirButton.Text = "Sefer Gelir Hesaplama";
             this.seferGelirButton.Click += new System.EventHandler(this.seferGelirButton_Click);
             // 
-            // tableLayoutPanel1
+            // panel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(83, 207);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.tableLayoutPanel1.TabIndex = 13;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 165);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(613, 397);
+            this.panel1.TabIndex = 13;
             // 
             // Form1
             // 
@@ -1193,7 +1188,7 @@
         private DevExpress.XtraEditors.SimpleButton seferGetirButton;
         private DevExpress.XtraEditors.SimpleButton seferListeleButton;
         private DevExpress.XtraEditors.ComboBoxEdit sefericerikListele;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
