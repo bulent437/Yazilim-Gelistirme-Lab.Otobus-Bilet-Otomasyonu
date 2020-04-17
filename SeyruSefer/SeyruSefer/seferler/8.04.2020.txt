@@ -1,7 +1,9 @@
+
+
 Sefer No:0
 Sefer Başlangıç:
 Sefer Varış:
-Sefer Tarih:11.04.2020
+Sefer Tarih:8.04.2020
 Saat: 00:00
 Kapasite: 40
 Plaka: 
@@ -48,15 +50,54 @@ Koltuk38:B
 Koltuk39:B
 Koltuk40:B
 -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Sefer No:1
 Sefer Başlangıç:
 Sefer Varış:
-Sefer Tarih:11.04.2020
+Sefer Tarih:8.04.2020
 Saat: 00:00
-Kapasite: 40
+Kapasite: 30
 Plaka: 
 Kaptan: 
-Bilet Fiyatı :5225
+Bilet Fiyatı :
 Koltuk1:B
 Koltuk2:B
 Koltuk3:B
@@ -87,14 +128,4 @@ Koltuk27:B
 Koltuk28:B
 Koltuk29:B
 Koltuk30:B
-Koltuk31:B
-Koltuk32:B
-Koltuk33:B
-Koltuk34:B
-Koltuk35:B
-Koltuk36:B
-Koltuk37:B
-Koltuk38:B
-Koltuk39:B
-Koltuk40:B
 -
