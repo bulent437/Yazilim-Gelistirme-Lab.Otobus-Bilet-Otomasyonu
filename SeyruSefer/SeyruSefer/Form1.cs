@@ -178,10 +178,12 @@ namespace SeyruSefer
                     //http://www.gorselprogramlama.com/kod-ile-buton-olusturma-c-net/
                     if (SeferKoltuk[j].ToString().IndexOf("Koltuk") == 0)
                     {
-                        Label a = new Label();
+                            
+                        Button a = new Button();
                         a.Top = 10 * j;
-                        a.Text = SeferKoltuk[j].ToString();                       
-                        panel1.Controls.Add(a);
+                        a.Text = SeferKoltuk[j].ToString();
+                        a.Parent = panel1;
+                        
                     }
                     else
                         break;
