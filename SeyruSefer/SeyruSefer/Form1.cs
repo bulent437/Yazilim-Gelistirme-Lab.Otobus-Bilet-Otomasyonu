@@ -69,7 +69,7 @@ namespace SeyruSefer
 
             int seferNo = 0;
             string tarih = seferTarih.Text + ".txt";
-            string dosya = @"C:\Users\C\source\repos\bulent437\YazGel\SeyruSefer\SeyruSefer\seferler\" + tarih;
+            string dosya = yol + tarih;
             FileStream fs;
             if (File.Exists(dosya) == true) // dizindeki dosya var mı ?
             {
@@ -191,5 +191,114 @@ namespace SeyruSefer
             }
         }
         #endregion
+
+        private void SefersilmeTarihi_EditValueChanged(object sender, EventArgs e)
+        {
+            SeferSilmeSefer.Properties.Items.Clear();
+            ArrayList SilinecekSeferler = new ArrayList();
+            string dosyaAdi = SefersilmeTarihi.Text + ".txt";
+            string dosya = yol + dosyaAdi;
+            FileStream fs;
+            if (File.Exists(dosya) == true)
+            {
+                fs = new FileStream(dosya, FileMode.Open, FileAccess.Read);
+                StreamReader sw = new StreamReader(fs);
+                string yazi = sw.ReadLine();
+                while (yazi != null)
+                {
+                    if (yazi.IndexOf("Sefer No:") == 0)
+                    {
+                        SilinecekSeferler.Add(yazi.Substring((yazi.IndexOf(":") + 1), (yazi.Length - 9)));
+
+                    }
+
+                    yazi = sw.ReadLine();
+
+                }
+                foreach (String eleman in SilinecekSeferler)
+                {
+                    SeferSilmeSefer.Properties.Items.Add("Sefer No:" + eleman);
+                }
+                sw.Close();
+                fs.Close();
+            }
+
+            else { MessageBox.Show("Bu tarihte kayıt bulunmamaktadır."); }
+        }
+        int sefersirano;
+        int seferbitisno;
+        private void seferSilButon_Click(object sender, EventArgs e)
+        {
+            
+            if (SefersilmeTarihi.SelectionLength == 0 || SeferSilmeSefer.SelectedItem == null)
+            {
+                MessageBox.Show("Lütfen tarih ve sefer seçiniz");
+            }
+            else
+            {
+                ArrayList tumVeriler = new ArrayList();
+                string dosyaAdi = SefersilmeTarihi.Text + ".txt";
+                string dosya = yol + dosyaAdi;
+                FileStream fs;
+                if (File.Exists(dosya) == true)
+                {
+                    fs = new FileStream(dosya, FileMode.Open, FileAccess.Read);
+                    StreamReader sw = new StreamReader(fs);
+                    string yazi = sw.ReadLine();
+                    while (yazi != null)
+                    {
+                        tumVeriler.Add(yazi);
+                        yazi = sw.ReadLine();
+                    }
+                    int verimiktari = tumVeriler.Count;
+
+                    for (int i = 0; i < verimiktari; i++)
+                    {
+                        if (tumVeriler[i].ToString() == SeferSilmeSefer.SelectedItem.ToString())
+                        {
+                            sefersirano = i;
+                        }
+                        else if (sefersirano > 0)
+                        {
+                            for (int k = sefersirano; k < verimiktari; k++)
+                            {
+                                if (tumVeriler[k].ToString() == "-")
+                                {
+                                    seferbitisno = k;
+                                }
+                            }
+                        }
+                    }
+                    for (int i = sefersirano; i < seferbitisno; i++)
+                    {
+                        tumVeriler[i] = "";
+                    }
+
+                    sw.Close();
+                    fs.Close();
+
+
+                }
+
+                else { MessageBox.Show("Secilen tarihe ait bir sefer bulunamadı."); }
+
+                System.IO.File.Delete(yol + SefersilmeTarihi.Text + ".txt");
+                ArrayList yeniVeriler = new ArrayList();
+                dosya = yol + SefersilmeTarihi.Text + ".txt";
+                for (int i = 0; i < sefersirano; i++)
+                {
+                    yeniVeriler.Add(tumVeriler[i].ToString());
+                }
+                for (int i = sefersirano; i < seferbitisno; i++)
+                {
+                    yeniVeriler.Add(tumVeriler[i].ToString());
+                }
+                for (int i = 0; i < yeniVeriler.Count; i++)
+                {
+                    File.AppendAllText(dosya, Environment.NewLine + yeniVeriler[i]);
+                }
+
+            }
+        }
     }
 }
