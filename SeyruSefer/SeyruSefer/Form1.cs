@@ -19,8 +19,8 @@ namespace SeyruSefer
             InitializeComponent();
 
         }
-         string yol = @"C:\Users\C\source\repos\bulent437\YazGel\SeyruSefer\SeyruSefer\seferler\";
-        //  string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
+         string yol = @"C:\Users\C\source\repos\YazGel\SeyruSefer\SeyruSefer\seferler\";
+       //  string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
         #region Sayfa Kontrolü
         int sefersirano = 0;
         int seferbitisno = 0;
@@ -226,8 +226,7 @@ namespace SeyruSefer
 
             else { MessageBox.Show("Bu tarihte kayıt bulunmamaktadır."); }
         }
-        int sefersirano;
-        int seferbitisno;
+       
         private void seferSilButon_Click(object sender, EventArgs e)
         {
             
@@ -251,7 +250,7 @@ namespace SeyruSefer
                         tumVeriler.Add(yazi);
                         yazi = sw.ReadLine();
                     }
-                    int verimiktari = tumVeriler.Count;
+                        int verimiktari = tumVeriler.Count;
 
                     for (int i = 0; i < verimiktari; i++)
                     {
@@ -266,14 +265,15 @@ namespace SeyruSefer
                                 if (tumVeriler[k].ToString() == "-")
                                 {
                                     seferbitisno = k;
+                                    break;
                                 }
                             }
                         }
                     }
-                    for (int i = sefersirano; i < seferbitisno; i++)
+               /*     for (int i = sefersirano; i < seferbitisno; i++)
                     {
                         tumVeriler[i] = "";
-                    }
+                    }*/
 
                     sw.Close();
                     fs.Close();
@@ -290,7 +290,7 @@ namespace SeyruSefer
                 {
                     yeniVeriler.Add(tumVeriler[i].ToString());
                 }
-                for (int i = sefersirano; i < seferbitisno; i++)
+                for (int i = seferbitisno+1; i < tumVeriler.Count; i++)
                 {
                     yeniVeriler.Add(tumVeriler[i].ToString());
                 }
