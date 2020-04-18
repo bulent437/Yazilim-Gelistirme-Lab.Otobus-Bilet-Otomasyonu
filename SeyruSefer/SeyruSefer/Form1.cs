@@ -9,7 +9,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Collections;
 using DevExpress.XtraReports.UI;
-
+using System.IO;
 namespace SeyruSefer
 {
     public partial class Form1 : DevExpress.XtraEditors.XtraForm
@@ -19,10 +19,11 @@ namespace SeyruSefer
             InitializeComponent();
 
         }
-        // string yol = @"C:\Users\C\source\repos\bulent437\YazGel\SeyruSefer\SeyruSefer\seferler\";
-        string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
+         string yol = @"C:\Users\C\source\repos\bulent437\YazGel\SeyruSefer\SeyruSefer\seferler\";
+        //  string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
         #region Sayfa Kontrolü
-
+        int sefersirano = 0;
+        int seferbitisno = 0;
         private void seferEklemeButton_Click(object sender, EventArgs e)
         {
             pageControl.SelectedPage = seferEklemePage;
