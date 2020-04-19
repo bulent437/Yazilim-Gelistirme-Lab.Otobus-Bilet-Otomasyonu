@@ -19,8 +19,8 @@ namespace SeyruSefer
             InitializeComponent();
 
         }
-         string yol = @"C:\Users\C\source\repos\YazGel\SeyruSefer\SeyruSefer\seferler\";
-       //  string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
+        // string yol = @"C:\Users\C\source\repos\YazGel\SeyruSefer\SeyruSefer\seferler\";
+        string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
         #region Sayfa Kontrolü
         int sefersirano = 0;
         int seferbitisno = 0;
@@ -173,7 +173,7 @@ namespace SeyruSefer
                 if(SeferKoltuk[i].ToString()==sefericerikListele.Text)//seçilen sefer ile textden aldığımız sefer eşleşince içinde tekrar döngü oluşturucaz
                 {
                     i++;
-                    for (int j = i; j < 51; j++) 
+                    for (int j = i; j < SeferKoltuk.Count; j++) 
                     //sıradaki sefere gelene kadarki bütün koltukları listele(göstermek için kullancaz)
                     //daha sonra bilet satışı için kullancaz aynı kodu bu sefer butonlara event ekleyicez tıklanabilcek
                     //http://www.gorselprogramlama.com/kod-ile-buton-olusturma-c-net/
