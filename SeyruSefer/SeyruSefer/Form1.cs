@@ -10,6 +10,10 @@ using System.Windows.Forms;
 using System.Collections;
 using DevExpress.XtraReports.UI;
 using System.IO;
+using DevExpress.XtraBars.Ribbon.ViewInfo;
+using DevExpress.Utils.Drawing;
+using DevExpress.XtraEditors;
+
 namespace SeyruSefer
 {
     public partial class Form1 : DevExpress.XtraEditors.XtraForm
@@ -168,6 +172,7 @@ namespace SeyruSefer
         
         private void seferListeleButton_Click(object sender, EventArgs e)
         {
+            seferListeleKoltukPanel.Controls.Clear();
             for (int i = 0; i < SeferKoltuk.Count; i++) 
             { 
                 if(SeferKoltuk[i].ToString()==sefericerikListele.Text)//seçilen sefer ile textden aldığımız sefer eşleşince içinde tekrar döngü oluşturucaz
@@ -179,11 +184,15 @@ namespace SeyruSefer
                     //http://www.gorselprogramlama.com/kod-ile-buton-olusturma-c-net/
                     if (SeferKoltuk[j].ToString().IndexOf("Koltuk") == 0)
                     {
-                            
+
                         Button a = new Button();
                         a.Top = 10 * j;
                         a.Text = SeferKoltuk[j].ToString();
-                        a.Parent = panel1;
+                        a.Enabled = false;
+                        a.BackgroundImage = iconlar.Items[1].ImageOptions.Image;
+                        a.BackgroundImageLayout = ImageLayout.Stretch;
+                        a.Parent = seferListeleKoltukPanel;
+                        a.Dock = DockStyle.Fill;
                         
                     }
                     else
