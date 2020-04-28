@@ -117,7 +117,7 @@ namespace SeyruSefer
                     for (int i = 1; i <= koltuksayisi; i++)
                     {
 
-                        File.AppendAllText(dosya, Environment.NewLine + "Koltuk" + i + ":B");
+                        File.AppendAllText(dosya, Environment.NewLine + "Koltuk" + i + ":Boş");
 
 
                     }
@@ -185,15 +185,17 @@ namespace SeyruSefer
                     if (SeferKoltuk[j].ToString().IndexOf("Koltuk") == 0)
                     {
 
-                        Button a = new Button();
+                        Button a = new Button();                        
                         a.Top = 10 * j;
                         a.Text = SeferKoltuk[j].ToString();
                         a.Enabled = false;
-                        a.BackgroundImage = iconlar.Items[1].ImageOptions.Image;
+                            if (a.Text.Substring((a.Text.IndexOf(":") + 1), 3) == "Boş")
+                                a.BackgroundImage = iconlar.Items[0].ImageOptions.Image;
+                            else
+                                a.BackgroundImage = iconlar.Items[1].ImageOptions.Image;
                         a.BackgroundImageLayout = ImageLayout.Stretch;
                         a.Parent = seferListeleKoltukPanel;
                         a.Dock = DockStyle.Fill;
-                        
                     }
                     else
                         break;
