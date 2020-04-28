@@ -1,6 +1,10 @@
 
 
-Sefer No:0
+
+
+
+
+Sefer No:2
 Sefer Başlangıç:İstanbul
 Sefer Varış:Kocaeli
 Sefer Tarih:29.04.2020
@@ -56,16 +60,16 @@ Koltuk44:Boş
 Koltuk45:Boş
 Koltuk46:Boş
 -
-Sefer No:2
+Sefer No:3
 Sefer Başlangıç:İstanbul
 Sefer Varış:Kocaeli
 Sefer Tarih:29.04.2020
-Saat: 04:00
+Saat: 01:00
 Kapasite: 46
-Plaka: csa
-Kaptan: csa
-Bilet Fiyatı :24
-Koltuk1:Boş
+Plaka: 
+Kaptan: 
+Bilet Fiyatı :
+Koltuk1:Dolu Cüneyt Yazıcı
 Koltuk2:Boş
 Koltuk3:Boş
 Koltuk4:Boş

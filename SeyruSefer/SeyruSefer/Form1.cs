@@ -23,8 +23,8 @@ namespace SeyruSefer
             InitializeComponent();
 
         }
-        // string yol = @"C:\Users\C\source\repos\YazGel\SeyruSefer\SeyruSefer\seferler\";
-        string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
+         string yol = @"C:\Users\C\Desktop\PROJE\SeyruSefer\SeyruSefer\seferler\";
+      //  string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
         #region Sayfa Kontrolü
         int sefersirano = 0;
         int seferbitisno = 0;
@@ -281,10 +281,7 @@ namespace SeyruSefer
                             }
                         }
                     }
-               /*     for (int i = sefersirano; i < seferbitisno; i++)
-                    {
-                        tumVeriler[i] = "";
-                    }*/
+      
 
                     sw.Close();
                     fs.Close();
@@ -311,6 +308,94 @@ namespace SeyruSefer
                 }
 
             }
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void satisBtn_Click(object sender, EventArgs e)
+        {
+            //Formda saat kısmına tarih koymussun sildim ama saat bulamadım onuda düzeltirsin dsadasd :)
+            string koltuk = "Koltuk1";
+            string saat = "01:00";
+            string AdSoyad = "Cüneyt Yazıcı";
+            string seferbaslangiç = "İstanbul";
+            string seferbitis = "Kocaeli";
+            //Yukarıdaki veriler formdan gelecek
+            int guncellenecekkoltuksirasi = 0;
+            int saatsirano = 0;
+            ArrayList tumVeriler = new ArrayList();
+            string dosyaAdi = biletTarih.Text + ".txt";
+            string dosya = yol + dosyaAdi;
+            FileStream fs;
+            if (File.Exists(dosya) == true)
+            {
+                fs = new FileStream(dosya, FileMode.Open, FileAccess.Read);
+                StreamReader sw = new StreamReader(fs);
+                string yazi = sw.ReadLine();
+                while (yazi != null)
+                {
+                    tumVeriler.Add(yazi);
+                    yazi = sw.ReadLine();
+                }
+               sw.Close();
+               fs.Close();
+
+            }
+            else
+            {
+                MessageBox.Show("Bu tarihe ait herhangi bir sefer kaydı bulunamadı");
+            }
+
+            int verimiktari = tumVeriler.Count;
+            int dongu = 1;
+            while (dongu > 0)
+            {
+
+                for (int i = saatsirano; i < verimiktari; i++)
+                {
+                    if (tumVeriler[i].ToString() == "Saat: " + saat)
+                    {
+                        saatsirano = i;
+                        break;
+
+                    }
+
+                }
+                if (tumVeriler[saatsirano - 3].ToString() == "Sefer Başlangıç:" + seferbaslangiç & tumVeriler[saatsirano - 2].ToString() == "Sefer Varış:" + seferbitis){
+                    for(int i = saatsirano; i < verimiktari; i++)
+                    {
+                        if (tumVeriler[i].ToString() == koltuk + ":Boş")
+                        {
+                            tumVeriler[i] = koltuk + ":Dolu " + AdSoyad;
+                            break;
+                        }
+                        
+                    }
+                    
+
+                    dongu = -1;
+                }
+
+                else {
+                    MessageBox.Show("Bu güzergah ve saat bilgilerine ait sefer bulunamadı");
+                    dongu = -1;
+                }
+
+            }
+            
+            MessageBox.Show(saatsirano.ToString());
+
+            System.IO.File.Delete(yol + biletTarih.Text + ".txt");
+            for (int i = 0; i < tumVeriler.Count; i++)
+            {
+                File.AppendAllText(dosya, Environment.NewLine + tumVeriler[i]);
+            }
+
+
+
         }
     }
 }
