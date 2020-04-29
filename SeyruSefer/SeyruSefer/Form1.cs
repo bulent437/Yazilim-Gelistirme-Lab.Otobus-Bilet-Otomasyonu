@@ -23,7 +23,8 @@ namespace SeyruSefer
             InitializeComponent();
 
         }
-         string yol = @"C:\Users\C\source\repos\YazGel\SeyruSefer\SeyruSefer\seferler\";
+        string guntarih = DateTime.Now.ToString("dd.MM.yyyy");
+        string yol = @"C:\Users\C\source\repos\YazGel\SeyruSefer\SeyruSefer\seferler\";
         //string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
         #region Sayfa Kontrolü
         int sefersirano = 0;
@@ -90,8 +91,8 @@ namespace SeyruSefer
                     }
                     yazi = sw.ReadLine();
                 }
-                sw.Close();
                 fs.Close();
+                sw.Close();
             }
             else
             {
@@ -102,11 +103,21 @@ namespace SeyruSefer
                 "\nPlaka: " + seferPlaka.Text + "\nKaptan: " + seferKaptan.Text + "\nBilet Fiyatı :" + seferBiletFiyat.Text;
 
             int koltuksayisi = Convert.ToInt32(seferKapasite.SelectedItem);
-
+           
+            
+        
             if (koltuksayisi <= 0 || koltuksayisi == null)
             {
                 MessageBox.Show("Araç kapasitesi 0 dan büyük olmalıdır");
+                string dosyaLog = yol + guntarih+"Log.txt";
+                FileStream fs1 = new FileStream(dosya, FileMode.OpenOrCreate, FileAccess.Write);
+
+                fs1.Close();
+                File.AppendAllText(dosyaLog, Environment.NewLine +"Sefer No:"+ seferNo + " adlı seferde" + seferSaat.Text + " saatinde"+ seferTarih.Text+ " tarihinde kapasite 0 dan kücük girildi");
+
             }
+            
+
             else
             {
                 FileStream fs1 = new FileStream(dosya, FileMode.OpenOrCreate, FileAccess.Write);
@@ -166,7 +177,14 @@ namespace SeyruSefer
                 fs.Close();
             }
 
-            else { MessageBox.Show("Bu tarihte kayıt bulunmamaktadır."); }
+            else { MessageBox.Show("Bu tarihte kayıt bulunmamaktadır.");
+                string dosyaLog = yol + guntarih + "Log.txt";
+                FileStream fs1 = new FileStream(dosya, FileMode.OpenOrCreate, FileAccess.Write);
+
+                fs1.Close();
+                File.AppendAllText(dosyaLog, Environment.NewLine +
+                    /*Buraya seferno ve sefer saati değişkene alınca yazılacak "Sefer No:" + seferNo + " adlı seferde" + seferSaat.Text + " saatinde" + */SeferTarihiListele.Text + " tarihinde listelenecek herhangi bir kayıt bulunamamıştır.Saat:" + DateTime.Now.ToLongTimeString());
+            }
            
            
 
@@ -244,7 +262,15 @@ namespace SeyruSefer
                 fs.Close();
             }
 
-            else { MessageBox.Show("Bu tarihte kayıt bulunmamaktadır."); }
+            else {
+                MessageBox.Show("Bu tarihte kayıt bulunmamaktadır.");
+               
+                string dosyaLog = yol + guntarih + "Log.txt";
+                FileStream fs1 = new FileStream(dosya, FileMode.OpenOrCreate, FileAccess.Write);
+
+                fs1.Close();
+                File.AppendAllText(dosyaLog, Environment.NewLine + SefersilmeTarihi.Text + " tarihli  silmek için herhangi bir kayıt bulunamamıştır. Saat:"+ DateTime.Now.ToLongTimeString());
+            }
         }
        
         private void seferSilButon_Click(object sender, EventArgs e)
@@ -349,6 +375,11 @@ namespace SeyruSefer
             else
             {
                 MessageBox.Show("Bu tarihe ait herhangi bir sefer kaydı bulunamadı");
+                string dosyaLog = yol + guntarih + "Log.txt";
+                FileStream fs1 = new FileStream(dosya, FileMode.OpenOrCreate, FileAccess.Write);
+
+                fs1.Close();
+                File.AppendAllText(dosyaLog, Environment.NewLine + biletTarih.Text + " tarihli bilet satış araması için  herhangi bir sefer kaydı bulunamadı. Saat:" + DateTime.Now.ToLongTimeString());
             }
 
             int verimiktari = tumVeriler.Count;
@@ -422,6 +453,11 @@ namespace SeyruSefer
             else
             {
                 MessageBox.Show("Bu tarihe ait herhangi bir sefer kaydı bulunamadı");
+                string dosyaLog = yol + guntarih + "Log.txt";
+                FileStream fs1 = new FileStream(dosya, FileMode.OpenOrCreate, FileAccess.Write);
+
+                fs1.Close();
+                File.AppendAllText(dosyaLog, Environment.NewLine + biletTarih.Text + " tarihli  koltuk listelemek için herhangi bir kayıt bulunamamıştır. Saat:" + DateTime.Now.ToLongTimeString());
             }
             ArrayList biletKoltuk = new ArrayList();
             for (int i = 0; i < tumVeriler.Count; i++)
