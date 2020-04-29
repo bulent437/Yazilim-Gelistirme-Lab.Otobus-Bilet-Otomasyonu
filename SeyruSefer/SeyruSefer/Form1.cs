@@ -9,7 +9,6 @@ using System.Text;
 using System.Windows.Forms;
 using System.Collections;
 using DevExpress.XtraReports.UI;
-using System.IO;
 using DevExpress.XtraBars.Ribbon.ViewInfo;
 using DevExpress.Utils.Drawing;
 using DevExpress.XtraEditors;
@@ -203,7 +202,7 @@ namespace SeyruSefer
             }
         }
         #endregion
-
+        #region Sefer Silme
         private void SefersilmeTarihi_EditValueChanged(object sender, EventArgs e)
         {
             SeferSilmeSefer.Properties.Items.Clear();
@@ -309,16 +308,11 @@ namespace SeyruSefer
 
             }
         }
-
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        #endregion
         private void satisBtn_Click(object sender, EventArgs e)
         {
             //Formda saat kısmına tarih koymussun sildim ama saat bulamadım onuda düzeltirsin dsadasd :)
-            string koltuk = "Koltuk1";
+            string koltuk = "Koltuk" + koltukNo.Text;
             string saat = "01:00";
             string AdSoyad = "Cüneyt Yazıcı";
             string seferbaslangiç = "İstanbul";
@@ -395,6 +389,11 @@ namespace SeyruSefer
             }
 
 
+
+        }
+
+        private void koltukListele_Click(object sender, EventArgs e)
+        {
 
         }
     }
