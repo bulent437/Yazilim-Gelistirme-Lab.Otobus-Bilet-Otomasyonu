@@ -505,5 +505,29 @@ namespace SeyruSefer
 
             }
         }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            string[] dosyalar = Directory.GetFiles(yol);
+            FileStream fs;
+            int seferSayac = 0;
+            foreach (string dosya in dosyalar)
+            {
+                fs = new FileStream(dosya, FileMode.Open, FileAccess.Read);
+                StreamReader sw = new StreamReader(fs);
+                string yazi = sw.ReadLine();
+                while (yazi != null)
+                {
+                    if (yazi.IndexOf("Sefer No:") == 0)
+                    {
+                        seferSayac++;
+                    }
+                    yazi = sw.ReadLine();
+                }
+                sw.Close();
+                fs.Close();
+            }
+            seferlerinSayisi.Text = seferSayac.ToString();
+        }
     }
 }

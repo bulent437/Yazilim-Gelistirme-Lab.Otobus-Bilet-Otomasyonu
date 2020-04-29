@@ -1,0 +1,281 @@
+
+Sefer No:0
+Sefer Başlangıç:İzmir
+Sefer Varış:Kocaeli
+Sefer Tarih:30.04.2020
+Saat: 02:00
+Kapasite: 46
+Plaka: 123
+Kaptan: sacd
+Bilet Fiyatı :22
+Koltuk1:Boş
+Koltuk2:Boş
+Koltuk3:Boş
+Koltuk4:Boş
+Koltuk5:Boş
+Koltuk6:Boş
+Koltuk7:Boş
+Koltuk8:Boş
+Koltuk9:Boş
+Koltuk10:Boş
+Koltuk11:Boş
+Koltuk12:Boş
+Koltuk13:Boş
+Koltuk14:Boş
+Koltuk15:Boş
+Koltuk16:Boş
+Koltuk17:Boş
+Koltuk18:Boş
+Koltuk19:Boş
+Koltuk20:Boş
+Koltuk21:Boş
+Koltuk22:Boş
+Koltuk23:Boş
+Koltuk24:Boş
+Koltuk25:Boş
+Koltuk26:Boş
+Koltuk27:Boş
+Koltuk28:Boş
+Koltuk29:Boş
+Koltuk30:Boş
+Koltuk31:Boş
+Koltuk32:Boş
+Koltuk33:Boş
+Koltuk34:Boş
+Koltuk35:Boş
+Koltuk36:Boş
+Koltuk37:Boş
+Koltuk38:Boş
+Koltuk39:Boş
+Koltuk40:Boş
+Koltuk41:Boş
+Koltuk42:Boş
+Koltuk43:Boş
+Koltuk44:Boş
+Koltuk45:Boş
+Koltuk46:Boş
+-
+Sefer No:1
+Sefer Başlangıç:İzmir
+Sefer Varış:Kocaeli
+Sefer Tarih:30.04.2020
+Saat: 02:00
+Kapasite: 46
+Plaka: 123
+Kaptan: sacd
+Bilet Fiyatı :22
+Koltuk1:Boş
+Koltuk2:Boş
+Koltuk3:Boş
+Koltuk4:Boş
+Koltuk5:Boş
+Koltuk6:Boş
+Koltuk7:Boş
+Koltuk8:Boş
+Koltuk9:Boş
+Koltuk10:Boş
+Koltuk11:Boş
+Koltuk12:Boş
+Koltuk13:Boş
+Koltuk14:Boş
+Koltuk15:Boş
+Koltuk16:Boş
+Koltuk17:Boş
+Koltuk18:Boş
+Koltuk19:Boş
+Koltuk20:Boş
+Koltuk21:Boş
+Koltuk22:Boş
+Koltuk23:Boş
+Koltuk24:Boş
+Koltuk25:Boş
+Koltuk26:Boş
+Koltuk27:Boş
+Koltuk28:Boş
+Koltuk29:Boş
+Koltuk30:Boş
+Koltuk31:Boş
+Koltuk32:Boş
+Koltuk33:Boş
+Koltuk34:Boş
+Koltuk35:Boş
+Koltuk36:Boş
+Koltuk37:Boş
+Koltuk38:Boş
+Koltuk39:Boş
+Koltuk40:Boş
+Koltuk41:Boş
+Koltuk42:Boş
+Koltuk43:Boş
+Koltuk44:Boş
+Koltuk45:Boş
+Koltuk46:Boş
+-
+Sefer No:2
+Sefer Başlangıç:İzmir
+Sefer Varış:Kocaeli
+Sefer Tarih:30.04.2020
+Saat: 02:00
+Kapasite: 46
+Plaka: 123
+Kaptan: sacd
+Bilet Fiyatı :22
+Koltuk1:Boş
+Koltuk2:Boş
+Koltuk3:Boş
+Koltuk4:Boş
+Koltuk5:Boş
+Koltuk6:Boş
+Koltuk7:Boş
+Koltuk8:Boş
+Koltuk9:Boş
+Koltuk10:Boş
+Koltuk11:Boş
+Koltuk12:Boş
+Koltuk13:Boş
+Koltuk14:Boş
+Koltuk15:Boş
+Koltuk16:Boş
+Koltuk17:Boş
+Koltuk18:Boş
+Koltuk19:Boş
+Koltuk20:Boş
+Koltuk21:Boş
+Koltuk22:Boş
+Koltuk23:Boş
+Koltuk24:Boş
+Koltuk25:Boş
+Koltuk26:Boş
+Koltuk27:Boş
+Koltuk28:Boş
+Koltuk29:Boş
+Koltuk30:Boş
+Koltuk31:Boş
+Koltuk32:Boş
+Koltuk33:Boş
+Koltuk34:Boş
+Koltuk35:Boş
+Koltuk36:Boş
+Koltuk37:Boş
+Koltuk38:Boş
+Koltuk39:Boş
+Koltuk40:Boş
+Koltuk41:Boş
+Koltuk42:Boş
+Koltuk43:Boş
+Koltuk44:Boş
+Koltuk45:Boş
+Koltuk46:Boş
+-
+Sefer No:3
+Sefer Başlangıç:İzmir
+Sefer Varış:Kocaeli
+Sefer Tarih:30.04.2020
+Saat: 02:00
+Kapasite: 46
+Plaka: 123
+Kaptan: sacd
+Bilet Fiyatı :22
+Koltuk1:Boş
+Koltuk2:Boş
+Koltuk3:Boş
+Koltuk4:Boş
+Koltuk5:Boş
+Koltuk6:Boş
+Koltuk7:Boş
+Koltuk8:Boş
+Koltuk9:Boş
+Koltuk10:Boş
+Koltuk11:Boş
+Koltuk12:Boş
+Koltuk13:Boş
+Koltuk14:Boş
+Koltuk15:Boş
+Koltuk16:Boş
+Koltuk17:Boş
+Koltuk18:Boş
+Koltuk19:Boş
+Koltuk20:Boş
+Koltuk21:Boş
+Koltuk22:Boş
+Koltuk23:Boş
+Koltuk24:Boş
+Koltuk25:Boş
+Koltuk26:Boş
+Koltuk27:Boş
+Koltuk28:Boş
+Koltuk29:Boş
+Koltuk30:Boş
+Koltuk31:Boş
+Koltuk32:Boş
+Koltuk33:Boş
+Koltuk34:Boş
+Koltuk35:Boş
+Koltuk36:Boş
+Koltuk37:Boş
+Koltuk38:Boş
+Koltuk39:Boş
+Koltuk40:Boş
+Koltuk41:Boş
+Koltuk42:Boş
+Koltuk43:Boş
+Koltuk44:Boş
+Koltuk45:Boş
+Koltuk46:Boş
+-
+Sefer No:4
+Sefer Başlangıç:İzmir
+Sefer Varış:Kocaeli
+Sefer Tarih:30.04.2020
+Saat: 02:00
+Kapasite: 46
+Plaka: 123
+Kaptan: sacd
+Bilet Fiyatı :22
+Koltuk1:Boş
+Koltuk2:Boş
+Koltuk3:Boş
+Koltuk4:Boş
+Koltuk5:Boş
+Koltuk6:Boş
+Koltuk7:Boş
+Koltuk8:Boş
+Koltuk9:Boş
+Koltuk10:Boş
+Koltuk11:Boş
+Koltuk12:Boş
+Koltuk13:Boş
+Koltuk14:Boş
+Koltuk15:Boş
+Koltuk16:Boş
+Koltuk17:Boş
+Koltuk18:Boş
+Koltuk19:Boş
+Koltuk20:Boş
+Koltuk21:Boş
+Koltuk22:Boş
+Koltuk23:Boş
+Koltuk24:Boş
+Koltuk25:Boş
+Koltuk26:Boş
+Koltuk27:Boş
+Koltuk28:Boş
+Koltuk29:Boş
+Koltuk30:Boş
+Koltuk31:Boş
+Koltuk32:Boş
+Koltuk33:Boş
+Koltuk34:Boş
+Koltuk35:Boş
+Koltuk36:Boş
+Koltuk37:Boş
+Koltuk38:Boş
+Koltuk39:Boş
+Koltuk40:Boş
+Koltuk41:Boş
+Koltuk42:Boş
+Koltuk43:Boş
+Koltuk44:Boş
+Koltuk45:Boş
+Koltuk46:Boş
+-
