@@ -69,9 +69,6 @@
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
-            this.seferGelirPage = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.seferlerinSayisi = new DevExpress.XtraEditors.LabelControl();
             this.seferListelemePage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tablePanel10 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel12 = new DevExpress.Utils.Layout.TablePanel();
@@ -137,7 +134,8 @@
             this.seferListelemeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.seferSilmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.kaptanDegistirmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.seferGelirButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.seferlerinSayisi = new DevExpress.XtraEditors.LabelControl();
+            this.seferleriSayButton = new DevExpress.XtraEditors.SimpleButton();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
@@ -169,7 +167,6 @@
             this.tablePanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
-            this.seferGelirPage.SuspendLayout();
             this.seferListelemePage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel10)).BeginInit();
             this.tablePanel10.SuspendLayout();
@@ -234,7 +231,6 @@
             this.pageControl.Controls.Add(this.seferEklemePage);
             this.pageControl.Controls.Add(this.seferSilmePage);
             this.pageControl.Controls.Add(this.kaptanDegistirmePage);
-            this.pageControl.Controls.Add(this.seferGelirPage);
             this.pageControl.Controls.Add(this.seferListelemePage);
             this.pageControl.Controls.Add(this.biletSatisPage);
             this.pageControl.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -245,7 +241,6 @@
             this.seferEklemePage,
             this.seferSilmePage,
             this.kaptanDegistirmePage,
-            this.seferGelirPage,
             this.seferListelemePage,
             this.biletSatisPage});
             this.tablePanel1.SetRow(this.pageControl, 0);
@@ -844,33 +839,6 @@
             this.labelControl16.TabIndex = 1;
             this.labelControl16.Text = "KAPTAN";
             // 
-            // seferGelirPage
-            // 
-            this.seferGelirPage.Caption = "seferGelirPage";
-            this.seferGelirPage.Controls.Add(this.simpleButton1);
-            this.seferGelirPage.Controls.Add(this.seferlerinSayisi);
-            this.seferGelirPage.Margin = new System.Windows.Forms.Padding(4);
-            this.seferGelirPage.Name = "seferGelirPage";
-            this.seferGelirPage.Size = new System.Drawing.Size(613, 562);
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(190, 25);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Text = "simpleButton1";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
-            // seferlerinSayisi
-            // 
-            this.seferlerinSayisi.Location = new System.Drawing.Point(190, 55);
-            this.seferlerinSayisi.Margin = new System.Windows.Forms.Padding(4);
-            this.seferlerinSayisi.Name = "seferlerinSayisi";
-            this.seferlerinSayisi.Size = new System.Drawing.Size(66, 13);
-            this.seferlerinSayisi.TabIndex = 1;
-            this.seferlerinSayisi.Text = "Sefer SAYACI";
-            // 
             // seferListelemePage
             // 
             this.seferListelemePage.Caption = "seferListelemePage";
@@ -901,10 +869,12 @@
             this.tablePanel12.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 32.37F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 27.63F)});
+            this.tablePanel12.Controls.Add(this.seferlerinSayisi);
             this.tablePanel12.Controls.Add(this.labelControl27);
             this.tablePanel12.Controls.Add(this.SeferBaslangicLbL);
             this.tablePanel12.Controls.Add(this.SeferVarişLbL);
             this.tablePanel12.Controls.Add(this.labelControl30);
+            this.tablePanel12.Controls.Add(this.seferleriSayButton);
             this.tablePanel12.Controls.Add(this.labelControl31);
             this.tablePanel12.Controls.Add(this.SeferTarihLbL);
             this.tablePanel12.Controls.Add(this.SeferSaatLbL);
@@ -924,16 +894,16 @@
             this.tablePanel12.Name = "tablePanel12";
             this.tablePanel10.SetRow(this.tablePanel12, 0);
             this.tablePanel12.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F)});
             this.tablePanel12.Size = new System.Drawing.Size(257, 391);
             this.tablePanel12.TabIndex = 2;
             // 
@@ -945,7 +915,7 @@
             this.labelControl27.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl27.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.labelControl27, 0);
-            this.labelControl27.Location = new System.Drawing.Point(4, 4);
+            this.labelControl27.Location = new System.Drawing.Point(4, 10);
             this.labelControl27.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl27.Name = "labelControl27";
             this.tablePanel12.SetRow(this.labelControl27, 0);
@@ -961,7 +931,7 @@
             this.SeferBaslangicLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferBaslangicLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferBaslangicLbL, 1);
-            this.SeferBaslangicLbL.Location = new System.Drawing.Point(143, 4);
+            this.SeferBaslangicLbL.Location = new System.Drawing.Point(143, 10);
             this.SeferBaslangicLbL.Margin = new System.Windows.Forms.Padding(4);
             this.SeferBaslangicLbL.Name = "SeferBaslangicLbL";
             this.tablePanel12.SetRow(this.SeferBaslangicLbL, 0);
@@ -976,7 +946,7 @@
             this.SeferVarişLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferVarişLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferVarişLbL, 1);
-            this.SeferVarişLbL.Location = new System.Drawing.Point(143, 30);
+            this.SeferVarişLbL.Location = new System.Drawing.Point(143, 49);
             this.SeferVarişLbL.Margin = new System.Windows.Forms.Padding(4);
             this.SeferVarişLbL.Name = "SeferVarişLbL";
             this.tablePanel12.SetRow(this.SeferVarişLbL, 1);
@@ -991,7 +961,7 @@
             this.labelControl30.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl30.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.labelControl30, 0);
-            this.labelControl30.Location = new System.Drawing.Point(4, 30);
+            this.labelControl30.Location = new System.Drawing.Point(4, 49);
             this.labelControl30.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl30.Name = "labelControl30";
             this.tablePanel12.SetRow(this.labelControl30, 1);
@@ -1007,7 +977,7 @@
             this.labelControl31.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl31.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.labelControl31, 0);
-            this.labelControl31.Location = new System.Drawing.Point(4, 56);
+            this.labelControl31.Location = new System.Drawing.Point(4, 88);
             this.labelControl31.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl31.Name = "labelControl31";
             this.tablePanel12.SetRow(this.labelControl31, 2);
@@ -1023,7 +993,7 @@
             this.SeferTarihLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferTarihLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferTarihLbL, 1);
-            this.SeferTarihLbL.Location = new System.Drawing.Point(143, 56);
+            this.SeferTarihLbL.Location = new System.Drawing.Point(143, 88);
             this.SeferTarihLbL.Margin = new System.Windows.Forms.Padding(4);
             this.SeferTarihLbL.Name = "SeferTarihLbL";
             this.tablePanel12.SetRow(this.SeferTarihLbL, 2);
@@ -1038,7 +1008,7 @@
             this.SeferSaatLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferSaatLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferSaatLbL, 1);
-            this.SeferSaatLbL.Location = new System.Drawing.Point(143, 82);
+            this.SeferSaatLbL.Location = new System.Drawing.Point(143, 127);
             this.SeferSaatLbL.Margin = new System.Windows.Forms.Padding(4);
             this.SeferSaatLbL.Name = "SeferSaatLbL";
             this.tablePanel12.SetRow(this.SeferSaatLbL, 3);
@@ -1053,7 +1023,7 @@
             this.labelControl34.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl34.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.labelControl34, 0);
-            this.labelControl34.Location = new System.Drawing.Point(4, 82);
+            this.labelControl34.Location = new System.Drawing.Point(4, 127);
             this.labelControl34.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl34.Name = "labelControl34";
             this.tablePanel12.SetRow(this.labelControl34, 3);
@@ -1069,7 +1039,7 @@
             this.labelControl35.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl35.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.labelControl35, 0);
-            this.labelControl35.Location = new System.Drawing.Point(4, 108);
+            this.labelControl35.Location = new System.Drawing.Point(4, 166);
             this.labelControl35.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl35.Name = "labelControl35";
             this.tablePanel12.SetRow(this.labelControl35, 4);
@@ -1085,7 +1055,7 @@
             this.SeferKapasiteLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferKapasiteLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferKapasiteLbL, 1);
-            this.SeferKapasiteLbL.Location = new System.Drawing.Point(143, 108);
+            this.SeferKapasiteLbL.Location = new System.Drawing.Point(143, 166);
             this.SeferKapasiteLbL.Margin = new System.Windows.Forms.Padding(4);
             this.SeferKapasiteLbL.Name = "SeferKapasiteLbL";
             this.tablePanel12.SetRow(this.SeferKapasiteLbL, 4);
@@ -1100,7 +1070,7 @@
             this.SeferPlakaLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferPlakaLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferPlakaLbL, 1);
-            this.SeferPlakaLbL.Location = new System.Drawing.Point(143, 134);
+            this.SeferPlakaLbL.Location = new System.Drawing.Point(143, 205);
             this.SeferPlakaLbL.Margin = new System.Windows.Forms.Padding(4);
             this.SeferPlakaLbL.Name = "SeferPlakaLbL";
             this.tablePanel12.SetRow(this.SeferPlakaLbL, 5);
@@ -1115,7 +1085,7 @@
             this.labelControl38.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl38.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.labelControl38, 0);
-            this.labelControl38.Location = new System.Drawing.Point(4, 134);
+            this.labelControl38.Location = new System.Drawing.Point(4, 205);
             this.labelControl38.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl38.Name = "labelControl38";
             this.tablePanel12.SetRow(this.labelControl38, 5);
@@ -1131,7 +1101,7 @@
             this.labelControl39.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl39.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.labelControl39, 0);
-            this.labelControl39.Location = new System.Drawing.Point(4, 160);
+            this.labelControl39.Location = new System.Drawing.Point(4, 244);
             this.labelControl39.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl39.Name = "labelControl39";
             this.tablePanel12.SetRow(this.labelControl39, 6);
@@ -1147,7 +1117,7 @@
             this.SeferKaptanLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferKaptanLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferKaptanLbL, 1);
-            this.SeferKaptanLbL.Location = new System.Drawing.Point(143, 160);
+            this.SeferKaptanLbL.Location = new System.Drawing.Point(143, 244);
             this.SeferKaptanLbL.Margin = new System.Windows.Forms.Padding(4);
             this.SeferKaptanLbL.Name = "SeferKaptanLbL";
             this.tablePanel12.SetRow(this.SeferKaptanLbL, 6);
@@ -1162,7 +1132,7 @@
             this.SeferBiletFiyatiLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferBiletFiyatiLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferBiletFiyatiLbL, 1);
-            this.SeferBiletFiyatiLbL.Location = new System.Drawing.Point(143, 186);
+            this.SeferBiletFiyatiLbL.Location = new System.Drawing.Point(143, 283);
             this.SeferBiletFiyatiLbL.Margin = new System.Windows.Forms.Padding(4);
             this.SeferBiletFiyatiLbL.Name = "SeferBiletFiyatiLbL";
             this.tablePanel12.SetRow(this.SeferBiletFiyatiLbL, 7);
@@ -1177,7 +1147,7 @@
             this.labelControl42.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl42.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.labelControl42, 0);
-            this.labelControl42.Location = new System.Drawing.Point(4, 186);
+            this.labelControl42.Location = new System.Drawing.Point(4, 283);
             this.labelControl42.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl42.Name = "labelControl42";
             this.tablePanel12.SetRow(this.labelControl42, 7);
@@ -1193,7 +1163,7 @@
             this.labelControl43.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl43.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.labelControl43, 0);
-            this.labelControl43.Location = new System.Drawing.Point(4, 212);
+            this.labelControl43.Location = new System.Drawing.Point(4, 322);
             this.labelControl43.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl43.Name = "labelControl43";
             this.tablePanel12.SetRow(this.labelControl43, 8);
@@ -1209,7 +1179,7 @@
             this.SeferToplamKazancLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferToplamKazancLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferToplamKazancLbL, 1);
-            this.SeferToplamKazancLbL.Location = new System.Drawing.Point(143, 212);
+            this.SeferToplamKazancLbL.Location = new System.Drawing.Point(143, 322);
             this.SeferToplamKazancLbL.Margin = new System.Windows.Forms.Padding(4);
             this.SeferToplamKazancLbL.Name = "SeferToplamKazancLbL";
             this.tablePanel12.SetRow(this.SeferToplamKazancLbL, 8);
@@ -1898,8 +1868,7 @@
             this.seferEklemeButton,
             this.seferListelemeButton,
             this.seferSilmeButton,
-            this.kaptanDegistirmeButton,
-            this.seferGelirButton});
+            this.kaptanDegistirmeButton});
             this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "Sefer İşlemleri";
@@ -1982,23 +1951,32 @@
             this.kaptanDegistirmeButton.Text = "Kaptan Değiştirme";
             this.kaptanDegistirmeButton.Click += new System.EventHandler(this.kaptanDegistirmeButton_Click);
             // 
-            // seferGelirButton
+            // seferlerinSayisi
             // 
-            this.seferGelirButton.Appearance.Disabled.Font = new System.Drawing.Font("Verdana", 13F, System.Drawing.FontStyle.Bold);
-            this.seferGelirButton.Appearance.Disabled.Options.UseFont = true;
-            this.seferGelirButton.Appearance.Hovered.Font = new System.Drawing.Font("Verdana", 13F, System.Drawing.FontStyle.Bold);
-            this.seferGelirButton.Appearance.Hovered.Options.UseFont = true;
-            this.seferGelirButton.Appearance.Normal.Font = new System.Drawing.Font("Verdana", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.seferGelirButton.Appearance.Normal.Options.UseFont = true;
-            this.seferGelirButton.Appearance.Pressed.Font = new System.Drawing.Font("Verdana", 13F, System.Drawing.FontStyle.Bold);
-            this.seferGelirButton.Appearance.Pressed.Options.UseFont = true;
-            this.seferGelirButton.Appearance.Pressed.Options.UseTextOptions = true;
-            this.seferGelirButton.Appearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.seferGelirButton.Appearance.Pressed.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.seferGelirButton.Name = "seferGelirButton";
-            this.seferGelirButton.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.seferGelirButton.Text = "Sefer Gelir Hesaplama";
-            this.seferGelirButton.Click += new System.EventHandler(this.seferGelirButton_Click);
+            this.seferlerinSayisi.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.seferlerinSayisi.Appearance.Options.UseFont = true;
+            this.tablePanel12.SetColumn(this.seferlerinSayisi, 1);
+            this.seferlerinSayisi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.seferlerinSayisi.Location = new System.Drawing.Point(143, 355);
+            this.seferlerinSayisi.Margin = new System.Windows.Forms.Padding(4);
+            this.seferlerinSayisi.Name = "seferlerinSayisi";
+            this.tablePanel12.SetRow(this.seferlerinSayisi, 9);
+            this.seferlerinSayisi.Size = new System.Drawing.Size(110, 32);
+            this.seferlerinSayisi.TabIndex = 3;
+            // 
+            // seferleriSayButton
+            // 
+            this.seferleriSayButton.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.seferleriSayButton.Appearance.Options.UseFont = true;
+            this.tablePanel12.SetColumn(this.seferleriSayButton, 0);
+            this.seferleriSayButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.seferleriSayButton.Location = new System.Drawing.Point(3, 354);
+            this.seferleriSayButton.Name = "seferleriSayButton";
+            this.tablePanel12.SetRow(this.seferleriSayButton, 9);
+            this.seferleriSayButton.Size = new System.Drawing.Size(133, 34);
+            this.seferleriSayButton.TabIndex = 13;
+            this.seferleriSayButton.Text = "Toplam Sefer";
+            this.seferleriSayButton.Click += new System.EventHandler(this.seferleriSayButton_Click);
             // 
             // Form1
             // 
@@ -2048,8 +2026,6 @@
             this.tablePanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).EndInit();
-            this.seferGelirPage.ResumeLayout(false);
-            this.seferGelirPage.PerformLayout();
             this.seferListelemePage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel10)).EndInit();
             this.tablePanel10.ResumeLayout(false);
@@ -2103,15 +2079,12 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement seferEklemeButton;
         private DevExpress.XtraBars.Navigation.AccordionControlElement seferSilmeButton;
         private DevExpress.XtraBars.Navigation.AccordionControlElement kaptanDegistirmeButton;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement seferGelirButton;
         private DevExpress.XtraBars.Navigation.AccordionControlElement seferListelemeButton;
         private DevExpress.XtraBars.Navigation.AccordionControlElement biletSatisButton;
         private DevExpress.XtraBars.Navigation.NavigationPage kaptanDegistirmePage;
-        private DevExpress.XtraBars.Navigation.NavigationPage seferGelirPage;
         private DevExpress.XtraBars.Navigation.NavigationPage seferListelemePage;
         private DevExpress.XtraBars.Navigation.NavigationPage biletSatisPage;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.LabelControl seferlerinSayisi;
         private DevExpress.XtraEditors.DateEdit seferTarih;
         private DevExpress.XtraEditors.ComboBoxEdit seferHedef;
         private DevExpress.XtraEditors.ComboBoxEdit seferBas;
@@ -2200,7 +2173,8 @@
         private DevExpress.XtraEditors.LabelControl labelControl43;
         private DevExpress.XtraEditors.LabelControl SeferToplamKazancLbL;
         private System.Windows.Forms.TableLayoutPanel seferListeleKoltukPanel;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.LabelControl seferlerinSayisi;
+        private DevExpress.XtraEditors.SimpleButton seferleriSayButton;
     }
 }
 

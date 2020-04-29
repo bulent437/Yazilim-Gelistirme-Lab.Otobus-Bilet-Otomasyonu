@@ -43,10 +43,6 @@ namespace SeyruSefer
             pageControl.SelectedPage = kaptanDegistirmePage;
         }
 
-        private void seferGelirButton_Click(object sender, EventArgs e)
-        {
-            pageControl.SelectedPage = seferGelirPage;
-        }
 
         private void seferListelemeButton_Click(object sender, EventArgs e)
         {
@@ -516,7 +512,8 @@ namespace SeyruSefer
             }
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
+
+        private void seferleriSayButton_Click(object sender, EventArgs e)
         {
             string[] dosyalar = Directory.GetFiles(yol);
             FileStream fs;
