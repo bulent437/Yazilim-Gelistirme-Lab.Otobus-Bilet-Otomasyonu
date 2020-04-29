@@ -23,8 +23,8 @@ namespace SeyruSefer
             InitializeComponent();
 
         }
-        // string yol = @"C:\Users\C\Desktop\PROJE\SeyruSefer\SeyruSefer\seferler\";
-        string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
+         string yol = @"C:\Users\C\source\repos\YazGel\SeyruSefer\SeyruSefer\seferler\";
+        //string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
         #region Sayfa Kontrolü
         int sefersirano = 0;
         int seferbitisno = 0;
@@ -134,6 +134,7 @@ namespace SeyruSefer
             SeferKoltuk.Clear();
             sefericerikListele.Properties.Items.Clear();
             ArrayList Seferler = new ArrayList();
+           
             string dosyaAdi = SeferTarihiListele.Text + ".txt";
             string dosya = yol + dosyaAdi;
             FileStream fs;
@@ -166,17 +167,21 @@ namespace SeyruSefer
             }
 
             else { MessageBox.Show("Bu tarihte kayıt bulunmamaktadır."); }
-
+           
+           
 
         }
-        
+        int biletfiyati = 50;
+        int bilett=0;
         private void seferListeleButton_Click(object sender, EventArgs e)
         {
+            SeferToplamKazancLbL.Text = "";
             seferListeleKoltukPanel.Controls.Clear();
             for (int i = 0; i < SeferKoltuk.Count; i++) 
             { 
                 if(SeferKoltuk[i].ToString()==sefericerikListele.Text)//seçilen sefer ile textden aldığımız sefer eşleşince içinde tekrar döngü oluşturucaz
                 {
+                   // SeferBaslangicLbL.Text = SeferKoltuk[i].ToString();
                     i++;
                     for (int j = i; j < SeferKoltuk.Count; j++) 
                     //sıradaki sefere gelene kadarki bütün koltukları listele(göstermek için kullancaz)
@@ -184,6 +189,7 @@ namespace SeyruSefer
                     //http://www.gorselprogramlama.com/kod-ile-buton-olusturma-c-net/
                     if (SeferKoltuk[j].ToString().IndexOf("Koltuk") == 0)
                     {
+                      
 
                         Button a = new Button();                        
                         a.Top = 10 * j;
@@ -192,13 +198,16 @@ namespace SeyruSefer
                             if (a.Text.Substring((a.Text.IndexOf(":") + 1), 3) == "Boş")
                                 a.BackgroundImage = iconlar.Items[0].ImageOptions.Image;
                             else
-                                a.BackgroundImage = iconlar.Items[1].ImageOptions.Image;
+                        bilett = biletfiyati+bilett ;
+                        a.BackgroundImage = iconlar.Items[1].ImageOptions.Image;
                         a.BackgroundImageLayout = ImageLayout.Stretch;
                         a.Parent = seferListeleKoltukPanel;
                         a.Dock = DockStyle.Fill;
+
                     }
                     else
                         break;
+                    SeferToplamKazancLbL.Text = bilett.ToString();
                 }
             }
         }
@@ -442,6 +451,7 @@ namespace SeyruSefer
                         if (biletKoltuk[j].ToString().IndexOf("Koltuk") == 0)
                         {
 
+                            
                             Button a = new Button();
                             a.Top = 10 * j;
                             a.Text = biletKoltuk[j].ToString();

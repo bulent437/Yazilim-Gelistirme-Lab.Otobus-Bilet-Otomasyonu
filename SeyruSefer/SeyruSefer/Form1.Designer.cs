@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions3 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
-            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions4 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
+            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions5 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
+            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions6 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.pageControl = new DevExpress.XtraBars.Navigation.NavigationFrame();
@@ -70,8 +70,30 @@
             this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.seferGelirPage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.seferlerinSayisi = new DevExpress.XtraEditors.LabelControl();
             this.seferListelemePage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.tablePanel10 = new DevExpress.Utils.Layout.TablePanel();
+            this.tablePanel12 = new DevExpress.Utils.Layout.TablePanel();
+            this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
+            this.SeferBaslangicLbL = new DevExpress.XtraEditors.LabelControl();
+            this.SeferVarişLbL = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
+            this.SeferTarihLbL = new DevExpress.XtraEditors.LabelControl();
+            this.SeferSaatLbL = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl35 = new DevExpress.XtraEditors.LabelControl();
+            this.SeferKapasiteLbL = new DevExpress.XtraEditors.LabelControl();
+            this.SeferPlakaLbL = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl38 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl39 = new DevExpress.XtraEditors.LabelControl();
+            this.SeferKaptanLbL = new DevExpress.XtraEditors.LabelControl();
+            this.SeferBiletFiyatiLbL = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl42 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl43 = new DevExpress.XtraEditors.LabelControl();
+            this.SeferToplamKazancLbL = new DevExpress.XtraEditors.LabelControl();
+            this.seferListeleKoltukPanel = new System.Windows.Forms.TableLayoutPanel();
             this.tablePanel6 = new DevExpress.Utils.Layout.TablePanel();
             this.sefericerikListele = new DevExpress.XtraEditors.ComboBoxEdit();
             this.seferGetirButton = new DevExpress.XtraEditors.SimpleButton();
@@ -116,28 +138,6 @@
             this.seferSilmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.kaptanDegistirmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.seferGelirButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.tablePanel10 = new DevExpress.Utils.Layout.TablePanel();
-            this.seferListeleKoltukPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.tablePanel12 = new DevExpress.Utils.Layout.TablePanel();
-            this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl28 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl29 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl32 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl33 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl35 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl36 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl37 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl38 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl39 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl40 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl41 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl42 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl43 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl44 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
@@ -171,6 +171,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
             this.seferGelirPage.SuspendLayout();
             this.seferListelemePage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel10)).BeginInit();
+            this.tablePanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel12)).BeginInit();
+            this.tablePanel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel6)).BeginInit();
             this.tablePanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sefericerikListele.Properties)).BeginInit();
@@ -196,10 +200,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.biletTarih.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.biletTarih.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel10)).BeginInit();
-            this.tablePanel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel12)).BeginInit();
-            this.tablePanel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // fluentDesignFormContainer1
@@ -631,11 +631,11 @@
             // 
             // iconlar
             // 
-            ımageListBoxItemImageOptions3.Image = global::SeyruSefer.Properties.Resources.person_60px;
-            ımageListBoxItemImageOptions4.Image = global::SeyruSefer.Properties.Resources.person_60px3;
+            ımageListBoxItemImageOptions5.Image = global::SeyruSefer.Properties.Resources.person_60px;
+            ımageListBoxItemImageOptions6.Image = global::SeyruSefer.Properties.Resources.person_60px3;
             this.iconlar.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageListBoxItem[] {
-            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions3, null),
-            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions4, null)});
+            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions5, null),
+            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions6, null)});
             this.iconlar.Location = new System.Drawing.Point(21, 220);
             this.iconlar.Name = "iconlar";
             this.iconlar.Size = new System.Drawing.Size(67, 134);
@@ -846,11 +846,21 @@
             // 
             // seferGelirPage
             // 
+            this.seferGelirPage.Caption = "seferGelirPage";
             this.seferGelirPage.Controls.Add(this.simpleButton1);
             this.seferGelirPage.Controls.Add(this.seferlerinSayisi);
             this.seferGelirPage.Margin = new System.Windows.Forms.Padding(4);
             this.seferGelirPage.Name = "seferGelirPage";
             this.seferGelirPage.Size = new System.Drawing.Size(613, 562);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(190, 25);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton1.TabIndex = 2;
+            this.simpleButton1.Text = "simpleButton1";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // seferlerinSayisi
             // 
@@ -863,11 +873,379 @@
             // 
             // seferListelemePage
             // 
+            this.seferListelemePage.Caption = "seferListelemePage";
             this.seferListelemePage.Controls.Add(this.tablePanel10);
             this.seferListelemePage.Controls.Add(this.tablePanel6);
             this.seferListelemePage.Margin = new System.Windows.Forms.Padding(4);
             this.seferListelemePage.Name = "seferListelemePage";
             this.seferListelemePage.Size = new System.Drawing.Size(613, 562);
+            // 
+            // tablePanel10
+            // 
+            this.tablePanel10.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 30F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 40F)});
+            this.tablePanel10.Controls.Add(this.tablePanel12);
+            this.tablePanel10.Controls.Add(this.seferListeleKoltukPanel);
+            this.tablePanel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel10.Location = new System.Drawing.Point(0, 165);
+            this.tablePanel10.Name = "tablePanel10";
+            this.tablePanel10.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
+            this.tablePanel10.Size = new System.Drawing.Size(613, 397);
+            this.tablePanel10.TabIndex = 13;
+            // 
+            // tablePanel12
+            // 
+            this.tablePanel10.SetColumn(this.tablePanel12, 0);
+            this.tablePanel12.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 32.37F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 27.63F)});
+            this.tablePanel12.Controls.Add(this.labelControl27);
+            this.tablePanel12.Controls.Add(this.SeferBaslangicLbL);
+            this.tablePanel12.Controls.Add(this.SeferVarişLbL);
+            this.tablePanel12.Controls.Add(this.labelControl30);
+            this.tablePanel12.Controls.Add(this.labelControl31);
+            this.tablePanel12.Controls.Add(this.SeferTarihLbL);
+            this.tablePanel12.Controls.Add(this.SeferSaatLbL);
+            this.tablePanel12.Controls.Add(this.labelControl34);
+            this.tablePanel12.Controls.Add(this.labelControl35);
+            this.tablePanel12.Controls.Add(this.SeferKapasiteLbL);
+            this.tablePanel12.Controls.Add(this.SeferPlakaLbL);
+            this.tablePanel12.Controls.Add(this.labelControl38);
+            this.tablePanel12.Controls.Add(this.labelControl39);
+            this.tablePanel12.Controls.Add(this.SeferKaptanLbL);
+            this.tablePanel12.Controls.Add(this.SeferBiletFiyatiLbL);
+            this.tablePanel12.Controls.Add(this.labelControl42);
+            this.tablePanel12.Controls.Add(this.labelControl43);
+            this.tablePanel12.Controls.Add(this.SeferToplamKazancLbL);
+            this.tablePanel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel12.Location = new System.Drawing.Point(3, 3);
+            this.tablePanel12.Name = "tablePanel12";
+            this.tablePanel10.SetRow(this.tablePanel12, 0);
+            this.tablePanel12.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
+            this.tablePanel12.Size = new System.Drawing.Size(257, 391);
+            this.tablePanel12.TabIndex = 2;
+            // 
+            // labelControl27
+            // 
+            this.labelControl27.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl27.Appearance.Options.UseFont = true;
+            this.labelControl27.Appearance.Options.UseTextOptions = true;
+            this.labelControl27.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl27.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.labelControl27, 0);
+            this.labelControl27.Location = new System.Drawing.Point(4, 4);
+            this.labelControl27.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl27.Name = "labelControl27";
+            this.tablePanel12.SetRow(this.labelControl27, 0);
+            this.labelControl27.Size = new System.Drawing.Size(131, 18);
+            this.labelControl27.TabIndex = 1;
+            this.labelControl27.Text = "Sefer Başlangıç:";
+            // 
+            // SeferBaslangicLbL
+            // 
+            this.SeferBaslangicLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SeferBaslangicLbL.Appearance.Options.UseFont = true;
+            this.SeferBaslangicLbL.Appearance.Options.UseTextOptions = true;
+            this.SeferBaslangicLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.SeferBaslangicLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.SeferBaslangicLbL, 1);
+            this.SeferBaslangicLbL.Location = new System.Drawing.Point(143, 4);
+            this.SeferBaslangicLbL.Margin = new System.Windows.Forms.Padding(4);
+            this.SeferBaslangicLbL.Name = "SeferBaslangicLbL";
+            this.tablePanel12.SetRow(this.SeferBaslangicLbL, 0);
+            this.SeferBaslangicLbL.Size = new System.Drawing.Size(0, 18);
+            this.SeferBaslangicLbL.TabIndex = 1;
+            // 
+            // SeferVarişLbL
+            // 
+            this.SeferVarişLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SeferVarişLbL.Appearance.Options.UseFont = true;
+            this.SeferVarişLbL.Appearance.Options.UseTextOptions = true;
+            this.SeferVarişLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.SeferVarişLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.SeferVarişLbL, 1);
+            this.SeferVarişLbL.Location = new System.Drawing.Point(143, 30);
+            this.SeferVarişLbL.Margin = new System.Windows.Forms.Padding(4);
+            this.SeferVarişLbL.Name = "SeferVarişLbL";
+            this.tablePanel12.SetRow(this.SeferVarişLbL, 1);
+            this.SeferVarişLbL.Size = new System.Drawing.Size(0, 18);
+            this.SeferVarişLbL.TabIndex = 1;
+            // 
+            // labelControl30
+            // 
+            this.labelControl30.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl30.Appearance.Options.UseFont = true;
+            this.labelControl30.Appearance.Options.UseTextOptions = true;
+            this.labelControl30.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl30.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.labelControl30, 0);
+            this.labelControl30.Location = new System.Drawing.Point(4, 30);
+            this.labelControl30.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl30.Name = "labelControl30";
+            this.tablePanel12.SetRow(this.labelControl30, 1);
+            this.labelControl30.Size = new System.Drawing.Size(96, 18);
+            this.labelControl30.TabIndex = 1;
+            this.labelControl30.Text = "Sefer Varış:";
+            // 
+            // labelControl31
+            // 
+            this.labelControl31.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl31.Appearance.Options.UseFont = true;
+            this.labelControl31.Appearance.Options.UseTextOptions = true;
+            this.labelControl31.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl31.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.labelControl31, 0);
+            this.labelControl31.Location = new System.Drawing.Point(4, 56);
+            this.labelControl31.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl31.Name = "labelControl31";
+            this.tablePanel12.SetRow(this.labelControl31, 2);
+            this.labelControl31.Size = new System.Drawing.Size(100, 18);
+            this.labelControl31.TabIndex = 1;
+            this.labelControl31.Text = "Sefer Tarihi:";
+            // 
+            // SeferTarihLbL
+            // 
+            this.SeferTarihLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SeferTarihLbL.Appearance.Options.UseFont = true;
+            this.SeferTarihLbL.Appearance.Options.UseTextOptions = true;
+            this.SeferTarihLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.SeferTarihLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.SeferTarihLbL, 1);
+            this.SeferTarihLbL.Location = new System.Drawing.Point(143, 56);
+            this.SeferTarihLbL.Margin = new System.Windows.Forms.Padding(4);
+            this.SeferTarihLbL.Name = "SeferTarihLbL";
+            this.tablePanel12.SetRow(this.SeferTarihLbL, 2);
+            this.SeferTarihLbL.Size = new System.Drawing.Size(0, 18);
+            this.SeferTarihLbL.TabIndex = 1;
+            // 
+            // SeferSaatLbL
+            // 
+            this.SeferSaatLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SeferSaatLbL.Appearance.Options.UseFont = true;
+            this.SeferSaatLbL.Appearance.Options.UseTextOptions = true;
+            this.SeferSaatLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.SeferSaatLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.SeferSaatLbL, 1);
+            this.SeferSaatLbL.Location = new System.Drawing.Point(143, 82);
+            this.SeferSaatLbL.Margin = new System.Windows.Forms.Padding(4);
+            this.SeferSaatLbL.Name = "SeferSaatLbL";
+            this.tablePanel12.SetRow(this.SeferSaatLbL, 3);
+            this.SeferSaatLbL.Size = new System.Drawing.Size(0, 18);
+            this.SeferSaatLbL.TabIndex = 1;
+            // 
+            // labelControl34
+            // 
+            this.labelControl34.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl34.Appearance.Options.UseFont = true;
+            this.labelControl34.Appearance.Options.UseTextOptions = true;
+            this.labelControl34.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl34.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.labelControl34, 0);
+            this.labelControl34.Location = new System.Drawing.Point(4, 82);
+            this.labelControl34.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl34.Name = "labelControl34";
+            this.tablePanel12.SetRow(this.labelControl34, 3);
+            this.labelControl34.Size = new System.Drawing.Size(44, 18);
+            this.labelControl34.TabIndex = 1;
+            this.labelControl34.Text = "Saat:";
+            // 
+            // labelControl35
+            // 
+            this.labelControl35.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl35.Appearance.Options.UseFont = true;
+            this.labelControl35.Appearance.Options.UseTextOptions = true;
+            this.labelControl35.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl35.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.labelControl35, 0);
+            this.labelControl35.Location = new System.Drawing.Point(4, 108);
+            this.labelControl35.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl35.Name = "labelControl35";
+            this.tablePanel12.SetRow(this.labelControl35, 4);
+            this.labelControl35.Size = new System.Drawing.Size(72, 18);
+            this.labelControl35.TabIndex = 1;
+            this.labelControl35.Text = "Kapasite";
+            // 
+            // SeferKapasiteLbL
+            // 
+            this.SeferKapasiteLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SeferKapasiteLbL.Appearance.Options.UseFont = true;
+            this.SeferKapasiteLbL.Appearance.Options.UseTextOptions = true;
+            this.SeferKapasiteLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.SeferKapasiteLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.SeferKapasiteLbL, 1);
+            this.SeferKapasiteLbL.Location = new System.Drawing.Point(143, 108);
+            this.SeferKapasiteLbL.Margin = new System.Windows.Forms.Padding(4);
+            this.SeferKapasiteLbL.Name = "SeferKapasiteLbL";
+            this.tablePanel12.SetRow(this.SeferKapasiteLbL, 4);
+            this.SeferKapasiteLbL.Size = new System.Drawing.Size(0, 18);
+            this.SeferKapasiteLbL.TabIndex = 1;
+            // 
+            // SeferPlakaLbL
+            // 
+            this.SeferPlakaLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SeferPlakaLbL.Appearance.Options.UseFont = true;
+            this.SeferPlakaLbL.Appearance.Options.UseTextOptions = true;
+            this.SeferPlakaLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.SeferPlakaLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.SeferPlakaLbL, 1);
+            this.SeferPlakaLbL.Location = new System.Drawing.Point(143, 134);
+            this.SeferPlakaLbL.Margin = new System.Windows.Forms.Padding(4);
+            this.SeferPlakaLbL.Name = "SeferPlakaLbL";
+            this.tablePanel12.SetRow(this.SeferPlakaLbL, 5);
+            this.SeferPlakaLbL.Size = new System.Drawing.Size(0, 18);
+            this.SeferPlakaLbL.TabIndex = 1;
+            // 
+            // labelControl38
+            // 
+            this.labelControl38.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl38.Appearance.Options.UseFont = true;
+            this.labelControl38.Appearance.Options.UseTextOptions = true;
+            this.labelControl38.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl38.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.labelControl38, 0);
+            this.labelControl38.Location = new System.Drawing.Point(4, 134);
+            this.labelControl38.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl38.Name = "labelControl38";
+            this.tablePanel12.SetRow(this.labelControl38, 5);
+            this.labelControl38.Size = new System.Drawing.Size(51, 18);
+            this.labelControl38.TabIndex = 1;
+            this.labelControl38.Text = "Plaka:";
+            // 
+            // labelControl39
+            // 
+            this.labelControl39.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl39.Appearance.Options.UseFont = true;
+            this.labelControl39.Appearance.Options.UseTextOptions = true;
+            this.labelControl39.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl39.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.labelControl39, 0);
+            this.labelControl39.Location = new System.Drawing.Point(4, 160);
+            this.labelControl39.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl39.Name = "labelControl39";
+            this.tablePanel12.SetRow(this.labelControl39, 6);
+            this.labelControl39.Size = new System.Drawing.Size(65, 18);
+            this.labelControl39.TabIndex = 1;
+            this.labelControl39.Text = "Kaptan:";
+            // 
+            // SeferKaptanLbL
+            // 
+            this.SeferKaptanLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SeferKaptanLbL.Appearance.Options.UseFont = true;
+            this.SeferKaptanLbL.Appearance.Options.UseTextOptions = true;
+            this.SeferKaptanLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.SeferKaptanLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.SeferKaptanLbL, 1);
+            this.SeferKaptanLbL.Location = new System.Drawing.Point(143, 160);
+            this.SeferKaptanLbL.Margin = new System.Windows.Forms.Padding(4);
+            this.SeferKaptanLbL.Name = "SeferKaptanLbL";
+            this.tablePanel12.SetRow(this.SeferKaptanLbL, 6);
+            this.SeferKaptanLbL.Size = new System.Drawing.Size(0, 18);
+            this.SeferKaptanLbL.TabIndex = 1;
+            // 
+            // SeferBiletFiyatiLbL
+            // 
+            this.SeferBiletFiyatiLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SeferBiletFiyatiLbL.Appearance.Options.UseFont = true;
+            this.SeferBiletFiyatiLbL.Appearance.Options.UseTextOptions = true;
+            this.SeferBiletFiyatiLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.SeferBiletFiyatiLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.SeferBiletFiyatiLbL, 1);
+            this.SeferBiletFiyatiLbL.Location = new System.Drawing.Point(143, 186);
+            this.SeferBiletFiyatiLbL.Margin = new System.Windows.Forms.Padding(4);
+            this.SeferBiletFiyatiLbL.Name = "SeferBiletFiyatiLbL";
+            this.tablePanel12.SetRow(this.SeferBiletFiyatiLbL, 7);
+            this.SeferBiletFiyatiLbL.Size = new System.Drawing.Size(0, 18);
+            this.SeferBiletFiyatiLbL.TabIndex = 1;
+            // 
+            // labelControl42
+            // 
+            this.labelControl42.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl42.Appearance.Options.UseFont = true;
+            this.labelControl42.Appearance.Options.UseTextOptions = true;
+            this.labelControl42.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl42.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.labelControl42, 0);
+            this.labelControl42.Location = new System.Drawing.Point(4, 186);
+            this.labelControl42.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl42.Name = "labelControl42";
+            this.tablePanel12.SetRow(this.labelControl42, 7);
+            this.labelControl42.Size = new System.Drawing.Size(92, 18);
+            this.labelControl42.TabIndex = 1;
+            this.labelControl42.Text = "Bilet Fiyatı:";
+            // 
+            // labelControl43
+            // 
+            this.labelControl43.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl43.Appearance.Options.UseFont = true;
+            this.labelControl43.Appearance.Options.UseTextOptions = true;
+            this.labelControl43.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl43.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.labelControl43, 0);
+            this.labelControl43.Location = new System.Drawing.Point(4, 212);
+            this.labelControl43.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl43.Name = "labelControl43";
+            this.tablePanel12.SetRow(this.labelControl43, 8);
+            this.labelControl43.Size = new System.Drawing.Size(118, 18);
+            this.labelControl43.TabIndex = 1;
+            this.labelControl43.Text = "Sefer Kazancı:";
+            // 
+            // SeferToplamKazancLbL
+            // 
+            this.SeferToplamKazancLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SeferToplamKazancLbL.Appearance.Options.UseFont = true;
+            this.SeferToplamKazancLbL.Appearance.Options.UseTextOptions = true;
+            this.SeferToplamKazancLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.SeferToplamKazancLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel12.SetColumn(this.SeferToplamKazancLbL, 1);
+            this.SeferToplamKazancLbL.Location = new System.Drawing.Point(143, 212);
+            this.SeferToplamKazancLbL.Margin = new System.Windows.Forms.Padding(4);
+            this.SeferToplamKazancLbL.Name = "SeferToplamKazancLbL";
+            this.tablePanel12.SetRow(this.SeferToplamKazancLbL, 8);
+            this.SeferToplamKazancLbL.Size = new System.Drawing.Size(0, 18);
+            this.SeferToplamKazancLbL.TabIndex = 1;
+            // 
+            // seferListeleKoltukPanel
+            // 
+            this.tablePanel10.SetColumn(this.seferListeleKoltukPanel, 1);
+            this.seferListeleKoltukPanel.ColumnCount = 4;
+            this.seferListeleKoltukPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.seferListeleKoltukPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.seferListeleKoltukPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.seferListeleKoltukPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.seferListeleKoltukPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.seferListeleKoltukPanel.Location = new System.Drawing.Point(266, 3);
+            this.seferListeleKoltukPanel.Name = "seferListeleKoltukPanel";
+            this.tablePanel10.SetRow(this.seferListeleKoltukPanel, 0);
+            this.seferListeleKoltukPanel.RowCount = 15;
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.seferListeleKoltukPanel.Size = new System.Drawing.Size(344, 391);
+            this.seferListeleKoltukPanel.TabIndex = 1;
             // 
             // tablePanel6
             // 
@@ -1622,391 +2000,6 @@
             this.seferGelirButton.Text = "Sefer Gelir Hesaplama";
             this.seferGelirButton.Click += new System.EventHandler(this.seferGelirButton_Click);
             // 
-            // tablePanel10
-            // 
-            this.tablePanel10.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 30F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 40F)});
-            this.tablePanel10.Controls.Add(this.tablePanel12);
-            this.tablePanel10.Controls.Add(this.seferListeleKoltukPanel);
-            this.tablePanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel10.Location = new System.Drawing.Point(0, 165);
-            this.tablePanel10.Name = "tablePanel10";
-            this.tablePanel10.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
-            this.tablePanel10.Size = new System.Drawing.Size(613, 397);
-            this.tablePanel10.TabIndex = 13;
-            // 
-            // seferListeleKoltukPanel
-            // 
-            this.tablePanel10.SetColumn(this.seferListeleKoltukPanel, 1);
-            this.seferListeleKoltukPanel.ColumnCount = 4;
-            this.seferListeleKoltukPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.seferListeleKoltukPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.seferListeleKoltukPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.seferListeleKoltukPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.seferListeleKoltukPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.seferListeleKoltukPanel.Location = new System.Drawing.Point(266, 3);
-            this.seferListeleKoltukPanel.Name = "seferListeleKoltukPanel";
-            this.tablePanel10.SetRow(this.seferListeleKoltukPanel, 0);
-            this.seferListeleKoltukPanel.RowCount = 15;
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.seferListeleKoltukPanel.Size = new System.Drawing.Size(344, 391);
-            this.seferListeleKoltukPanel.TabIndex = 1;
-            // 
-            // tablePanel12
-            // 
-            this.tablePanel10.SetColumn(this.tablePanel12, 0);
-            this.tablePanel12.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 29.84F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 30.16F)});
-            this.tablePanel12.Controls.Add(this.labelControl27);
-            this.tablePanel12.Controls.Add(this.labelControl28);
-            this.tablePanel12.Controls.Add(this.labelControl29);
-            this.tablePanel12.Controls.Add(this.labelControl30);
-            this.tablePanel12.Controls.Add(this.labelControl31);
-            this.tablePanel12.Controls.Add(this.labelControl32);
-            this.tablePanel12.Controls.Add(this.labelControl33);
-            this.tablePanel12.Controls.Add(this.labelControl34);
-            this.tablePanel12.Controls.Add(this.labelControl35);
-            this.tablePanel12.Controls.Add(this.labelControl36);
-            this.tablePanel12.Controls.Add(this.labelControl37);
-            this.tablePanel12.Controls.Add(this.labelControl38);
-            this.tablePanel12.Controls.Add(this.labelControl39);
-            this.tablePanel12.Controls.Add(this.labelControl40);
-            this.tablePanel12.Controls.Add(this.labelControl41);
-            this.tablePanel12.Controls.Add(this.labelControl42);
-            this.tablePanel12.Controls.Add(this.labelControl43);
-            this.tablePanel12.Controls.Add(this.labelControl44);
-            this.tablePanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel12.Location = new System.Drawing.Point(3, 3);
-            this.tablePanel12.Name = "tablePanel12";
-            this.tablePanel10.SetRow(this.tablePanel12, 0);
-            this.tablePanel12.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
-            this.tablePanel12.Size = new System.Drawing.Size(257, 391);
-            this.tablePanel12.TabIndex = 2;
-            // 
-            // labelControl27
-            // 
-            this.labelControl27.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl27.Appearance.Options.UseFont = true;
-            this.labelControl27.Appearance.Options.UseTextOptions = true;
-            this.labelControl27.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl27.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl27, 0);
-            this.labelControl27.Location = new System.Drawing.Point(4, 4);
-            this.labelControl27.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl27.Name = "labelControl27";
-            this.tablePanel12.SetRow(this.labelControl27, 0);
-            this.labelControl27.Size = new System.Drawing.Size(119, 18);
-            this.labelControl27.TabIndex = 1;
-            this.labelControl27.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl28
-            // 
-            this.labelControl28.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl28.Appearance.Options.UseFont = true;
-            this.labelControl28.Appearance.Options.UseTextOptions = true;
-            this.labelControl28.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl28.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl28, 1);
-            this.labelControl28.Location = new System.Drawing.Point(132, 4);
-            this.labelControl28.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl28.Name = "labelControl28";
-            this.tablePanel12.SetRow(this.labelControl28, 0);
-            this.labelControl28.Size = new System.Drawing.Size(119, 18);
-            this.labelControl28.TabIndex = 1;
-            this.labelControl28.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl29
-            // 
-            this.labelControl29.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl29.Appearance.Options.UseFont = true;
-            this.labelControl29.Appearance.Options.UseTextOptions = true;
-            this.labelControl29.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl29.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl29, 1);
-            this.labelControl29.Location = new System.Drawing.Point(132, 30);
-            this.labelControl29.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl29.Name = "labelControl29";
-            this.tablePanel12.SetRow(this.labelControl29, 1);
-            this.labelControl29.Size = new System.Drawing.Size(119, 18);
-            this.labelControl29.TabIndex = 1;
-            this.labelControl29.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl30
-            // 
-            this.labelControl30.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl30.Appearance.Options.UseFont = true;
-            this.labelControl30.Appearance.Options.UseTextOptions = true;
-            this.labelControl30.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl30.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl30, 0);
-            this.labelControl30.Location = new System.Drawing.Point(4, 30);
-            this.labelControl30.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl30.Name = "labelControl30";
-            this.tablePanel12.SetRow(this.labelControl30, 1);
-            this.labelControl30.Size = new System.Drawing.Size(119, 18);
-            this.labelControl30.TabIndex = 1;
-            this.labelControl30.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl31
-            // 
-            this.labelControl31.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl31.Appearance.Options.UseFont = true;
-            this.labelControl31.Appearance.Options.UseTextOptions = true;
-            this.labelControl31.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl31.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl31, 0);
-            this.labelControl31.Location = new System.Drawing.Point(4, 56);
-            this.labelControl31.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl31.Name = "labelControl31";
-            this.tablePanel12.SetRow(this.labelControl31, 2);
-            this.labelControl31.Size = new System.Drawing.Size(119, 18);
-            this.labelControl31.TabIndex = 1;
-            this.labelControl31.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl32
-            // 
-            this.labelControl32.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl32.Appearance.Options.UseFont = true;
-            this.labelControl32.Appearance.Options.UseTextOptions = true;
-            this.labelControl32.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl32.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl32, 1);
-            this.labelControl32.Location = new System.Drawing.Point(132, 56);
-            this.labelControl32.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl32.Name = "labelControl32";
-            this.tablePanel12.SetRow(this.labelControl32, 2);
-            this.labelControl32.Size = new System.Drawing.Size(119, 18);
-            this.labelControl32.TabIndex = 1;
-            this.labelControl32.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl33
-            // 
-            this.labelControl33.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl33.Appearance.Options.UseFont = true;
-            this.labelControl33.Appearance.Options.UseTextOptions = true;
-            this.labelControl33.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl33.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl33, 1);
-            this.labelControl33.Location = new System.Drawing.Point(132, 82);
-            this.labelControl33.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl33.Name = "labelControl33";
-            this.tablePanel12.SetRow(this.labelControl33, 3);
-            this.labelControl33.Size = new System.Drawing.Size(119, 18);
-            this.labelControl33.TabIndex = 1;
-            this.labelControl33.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl34
-            // 
-            this.labelControl34.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl34.Appearance.Options.UseFont = true;
-            this.labelControl34.Appearance.Options.UseTextOptions = true;
-            this.labelControl34.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl34.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl34, 0);
-            this.labelControl34.Location = new System.Drawing.Point(4, 82);
-            this.labelControl34.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl34.Name = "labelControl34";
-            this.tablePanel12.SetRow(this.labelControl34, 3);
-            this.labelControl34.Size = new System.Drawing.Size(119, 18);
-            this.labelControl34.TabIndex = 1;
-            this.labelControl34.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl35
-            // 
-            this.labelControl35.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl35.Appearance.Options.UseFont = true;
-            this.labelControl35.Appearance.Options.UseTextOptions = true;
-            this.labelControl35.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl35.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl35, 0);
-            this.labelControl35.Location = new System.Drawing.Point(4, 108);
-            this.labelControl35.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl35.Name = "labelControl35";
-            this.tablePanel12.SetRow(this.labelControl35, 4);
-            this.labelControl35.Size = new System.Drawing.Size(119, 18);
-            this.labelControl35.TabIndex = 1;
-            this.labelControl35.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl36
-            // 
-            this.labelControl36.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl36.Appearance.Options.UseFont = true;
-            this.labelControl36.Appearance.Options.UseTextOptions = true;
-            this.labelControl36.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl36.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl36, 1);
-            this.labelControl36.Location = new System.Drawing.Point(132, 108);
-            this.labelControl36.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl36.Name = "labelControl36";
-            this.tablePanel12.SetRow(this.labelControl36, 4);
-            this.labelControl36.Size = new System.Drawing.Size(119, 18);
-            this.labelControl36.TabIndex = 1;
-            this.labelControl36.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl37
-            // 
-            this.labelControl37.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl37.Appearance.Options.UseFont = true;
-            this.labelControl37.Appearance.Options.UseTextOptions = true;
-            this.labelControl37.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl37.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl37, 1);
-            this.labelControl37.Location = new System.Drawing.Point(132, 134);
-            this.labelControl37.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl37.Name = "labelControl37";
-            this.tablePanel12.SetRow(this.labelControl37, 5);
-            this.labelControl37.Size = new System.Drawing.Size(119, 18);
-            this.labelControl37.TabIndex = 1;
-            this.labelControl37.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl38
-            // 
-            this.labelControl38.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl38.Appearance.Options.UseFont = true;
-            this.labelControl38.Appearance.Options.UseTextOptions = true;
-            this.labelControl38.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl38.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl38, 0);
-            this.labelControl38.Location = new System.Drawing.Point(4, 134);
-            this.labelControl38.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl38.Name = "labelControl38";
-            this.tablePanel12.SetRow(this.labelControl38, 5);
-            this.labelControl38.Size = new System.Drawing.Size(119, 18);
-            this.labelControl38.TabIndex = 1;
-            this.labelControl38.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl39
-            // 
-            this.labelControl39.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl39.Appearance.Options.UseFont = true;
-            this.labelControl39.Appearance.Options.UseTextOptions = true;
-            this.labelControl39.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl39.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl39, 0);
-            this.labelControl39.Location = new System.Drawing.Point(4, 160);
-            this.labelControl39.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl39.Name = "labelControl39";
-            this.tablePanel12.SetRow(this.labelControl39, 6);
-            this.labelControl39.Size = new System.Drawing.Size(119, 18);
-            this.labelControl39.TabIndex = 1;
-            this.labelControl39.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl40
-            // 
-            this.labelControl40.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl40.Appearance.Options.UseFont = true;
-            this.labelControl40.Appearance.Options.UseTextOptions = true;
-            this.labelControl40.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl40.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl40, 1);
-            this.labelControl40.Location = new System.Drawing.Point(132, 160);
-            this.labelControl40.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl40.Name = "labelControl40";
-            this.tablePanel12.SetRow(this.labelControl40, 6);
-            this.labelControl40.Size = new System.Drawing.Size(119, 18);
-            this.labelControl40.TabIndex = 1;
-            this.labelControl40.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl41
-            // 
-            this.labelControl41.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl41.Appearance.Options.UseFont = true;
-            this.labelControl41.Appearance.Options.UseTextOptions = true;
-            this.labelControl41.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl41.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl41, 1);
-            this.labelControl41.Location = new System.Drawing.Point(132, 186);
-            this.labelControl41.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl41.Name = "labelControl41";
-            this.tablePanel12.SetRow(this.labelControl41, 7);
-            this.labelControl41.Size = new System.Drawing.Size(119, 18);
-            this.labelControl41.TabIndex = 1;
-            this.labelControl41.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl42
-            // 
-            this.labelControl42.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl42.Appearance.Options.UseFont = true;
-            this.labelControl42.Appearance.Options.UseTextOptions = true;
-            this.labelControl42.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl42.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl42, 0);
-            this.labelControl42.Location = new System.Drawing.Point(4, 186);
-            this.labelControl42.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl42.Name = "labelControl42";
-            this.tablePanel12.SetRow(this.labelControl42, 7);
-            this.labelControl42.Size = new System.Drawing.Size(119, 18);
-            this.labelControl42.TabIndex = 1;
-            this.labelControl42.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl43
-            // 
-            this.labelControl43.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl43.Appearance.Options.UseFont = true;
-            this.labelControl43.Appearance.Options.UseTextOptions = true;
-            this.labelControl43.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl43.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl43, 0);
-            this.labelControl43.Location = new System.Drawing.Point(4, 212);
-            this.labelControl43.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl43.Name = "labelControl43";
-            this.tablePanel12.SetRow(this.labelControl43, 8);
-            this.labelControl43.Size = new System.Drawing.Size(119, 18);
-            this.labelControl43.TabIndex = 1;
-            this.labelControl43.Text = "TARİHİ SEÇİN";
-            // 
-            // labelControl44
-            // 
-            this.labelControl44.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl44.Appearance.Options.UseFont = true;
-            this.labelControl44.Appearance.Options.UseTextOptions = true;
-            this.labelControl44.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl44.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel12.SetColumn(this.labelControl44, 1);
-            this.labelControl44.Location = new System.Drawing.Point(132, 212);
-            this.labelControl44.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl44.Name = "labelControl44";
-            this.tablePanel12.SetRow(this.labelControl44, 8);
-            this.labelControl44.Size = new System.Drawing.Size(119, 18);
-            this.labelControl44.TabIndex = 1;
-            this.labelControl44.Text = "TARİHİ SEÇİN";
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(190, 25);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Text = "simpleButton1";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
             // Form1
             // 
             this.Appearance.Options.UseFont = true;
@@ -2058,6 +2051,11 @@
             this.seferGelirPage.ResumeLayout(false);
             this.seferGelirPage.PerformLayout();
             this.seferListelemePage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel10)).EndInit();
+            this.tablePanel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel12)).EndInit();
+            this.tablePanel12.ResumeLayout(false);
+            this.tablePanel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel6)).EndInit();
             this.tablePanel6.ResumeLayout(false);
             this.tablePanel6.PerformLayout();
@@ -2089,11 +2087,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.biletTarih.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.biletTarih.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel10)).EndInit();
-            this.tablePanel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel12)).EndInit();
-            this.tablePanel12.ResumeLayout(false);
-            this.tablePanel12.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2189,23 +2182,23 @@
         private DevExpress.Utils.Layout.TablePanel tablePanel10;
         private DevExpress.Utils.Layout.TablePanel tablePanel12;
         private DevExpress.XtraEditors.LabelControl labelControl27;
-        private DevExpress.XtraEditors.LabelControl labelControl28;
-        private DevExpress.XtraEditors.LabelControl labelControl29;
+        private DevExpress.XtraEditors.LabelControl SeferBaslangicLbL;
+        private DevExpress.XtraEditors.LabelControl SeferVarişLbL;
         private DevExpress.XtraEditors.LabelControl labelControl30;
         private DevExpress.XtraEditors.LabelControl labelControl31;
-        private DevExpress.XtraEditors.LabelControl labelControl32;
-        private DevExpress.XtraEditors.LabelControl labelControl33;
+        private DevExpress.XtraEditors.LabelControl SeferTarihLbL;
+        private DevExpress.XtraEditors.LabelControl SeferSaatLbL;
         private DevExpress.XtraEditors.LabelControl labelControl34;
         private DevExpress.XtraEditors.LabelControl labelControl35;
-        private DevExpress.XtraEditors.LabelControl labelControl36;
-        private DevExpress.XtraEditors.LabelControl labelControl37;
+        private DevExpress.XtraEditors.LabelControl SeferKapasiteLbL;
+        private DevExpress.XtraEditors.LabelControl SeferPlakaLbL;
         private DevExpress.XtraEditors.LabelControl labelControl38;
         private DevExpress.XtraEditors.LabelControl labelControl39;
-        private DevExpress.XtraEditors.LabelControl labelControl40;
-        private DevExpress.XtraEditors.LabelControl labelControl41;
+        private DevExpress.XtraEditors.LabelControl SeferKaptanLbL;
+        private DevExpress.XtraEditors.LabelControl SeferBiletFiyatiLbL;
         private DevExpress.XtraEditors.LabelControl labelControl42;
         private DevExpress.XtraEditors.LabelControl labelControl43;
-        private DevExpress.XtraEditors.LabelControl labelControl44;
+        private DevExpress.XtraEditors.LabelControl SeferToplamKazancLbL;
         private System.Windows.Forms.TableLayoutPanel seferListeleKoltukPanel;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
