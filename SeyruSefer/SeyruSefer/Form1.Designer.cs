@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions3 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
-            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions4 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
+            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions1 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
+            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions2 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.pageControl = new DevExpress.XtraBars.Navigation.NavigationFrame();
@@ -83,9 +83,23 @@
             this.seferListeleButton = new DevExpress.XtraEditors.SimpleButton();
             this.biletSatisPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tablePanel8 = new DevExpress.Utils.Layout.TablePanel();
+            this.tablePanel9 = new DevExpress.Utils.Layout.TablePanel();
+            this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
+            this.bilet = new DevExpress.Utils.Layout.TablePanel();
+            this.koltukNo = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
+            this.adSoyad = new DevExpress.XtraEditors.TextEdit();
             this.satisBtn = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tablePanel11 = new DevExpress.Utils.Layout.TablePanel();
+            this.biletFiyat = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
+            this.biletPlaka = new DevExpress.XtraEditors.LabelControl();
+            this.biletKaptan = new DevExpress.XtraEditors.LabelControl();
+            this.biletKoltukPanel = new System.Windows.Forms.TableLayoutPanel();
             this.tablePanel4 = new DevExpress.Utils.Layout.TablePanel();
+            this.biletSaat = new DevExpress.XtraEditors.ComboBoxEdit();
             this.koltukListele = new DevExpress.XtraEditors.SimpleButton();
             this.tablePanel7 = new DevExpress.Utils.Layout.TablePanel();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -104,16 +118,6 @@
             this.seferSilmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.kaptanDegistirmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.seferGelirButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.biletSaat = new DevExpress.XtraEditors.DateEdit();
-            this.tablePanel9 = new DevExpress.Utils.Layout.TablePanel();
-            this.adSoyad = new DevExpress.XtraEditors.TextEdit();
-            this.tablePanel10 = new DevExpress.Utils.Layout.TablePanel();
-            this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
-            this.koltukNo = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
-            this.tablePanel11 = new DevExpress.Utils.Layout.TablePanel();
-            this.biletFiyat = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
@@ -156,8 +160,16 @@
             this.biletSatisPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel8)).BeginInit();
             this.tablePanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel9)).BeginInit();
+            this.tablePanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bilet)).BeginInit();
+            this.bilet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.adSoyad.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel11)).BeginInit();
+            this.tablePanel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
             this.tablePanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.biletSaat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel7)).BeginInit();
             this.tablePanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.biletHedef.Properties)).BeginInit();
@@ -165,15 +177,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.biletTarih.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.biletTarih.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.biletSaat.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.biletSaat.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel9)).BeginInit();
-            this.tablePanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.adSoyad.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel10)).BeginInit();
-            this.tablePanel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel11)).BeginInit();
-            this.tablePanel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // fluentDesignFormContainer1
@@ -605,11 +608,11 @@
             // 
             // iconlar
             // 
-            ımageListBoxItemImageOptions3.Image = global::SeyruSefer.Properties.Resources.person_60px;
-            ımageListBoxItemImageOptions4.Image = global::SeyruSefer.Properties.Resources.person_60px3;
+            ımageListBoxItemImageOptions1.Image = global::SeyruSefer.Properties.Resources.person_60px;
+            ımageListBoxItemImageOptions2.Image = global::SeyruSefer.Properties.Resources.person_60px3;
             this.iconlar.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageListBoxItem[] {
-            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions3, null),
-            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions4, null)});
+            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions1, null),
+            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions2, null)});
             this.iconlar.Location = new System.Drawing.Point(21, 220);
             this.iconlar.Name = "iconlar";
             this.iconlar.Size = new System.Drawing.Size(67, 134);
@@ -1012,7 +1015,7 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 35F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 25F)});
             this.tablePanel8.Controls.Add(this.tablePanel9);
-            this.tablePanel8.Controls.Add(this.tableLayoutPanel1);
+            this.tablePanel8.Controls.Add(this.biletKoltukPanel);
             this.tablePanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel8.Location = new System.Drawing.Point(0, 186);
             this.tablePanel8.Name = "tablePanel8";
@@ -1021,62 +1024,254 @@
             this.tablePanel8.Size = new System.Drawing.Size(613, 376);
             this.tablePanel8.TabIndex = 9;
             // 
+            // tablePanel9
+            // 
+            this.tablePanel8.SetColumn(this.tablePanel9, 1);
+            this.tablePanel9.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F)});
+            this.tablePanel9.Controls.Add(this.labelControl23);
+            this.tablePanel9.Controls.Add(this.bilet);
+            this.tablePanel9.Controls.Add(this.adSoyad);
+            this.tablePanel9.Controls.Add(this.satisBtn);
+            this.tablePanel9.Controls.Add(this.tablePanel11);
+            this.tablePanel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tablePanel9.Location = new System.Drawing.Point(361, 3);
+            this.tablePanel9.Name = "tablePanel9";
+            this.tablePanel8.SetRow(this.tablePanel9, 0);
+            this.tablePanel9.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 6F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F)});
+            this.tablePanel9.Size = new System.Drawing.Size(249, 177);
+            this.tablePanel9.TabIndex = 12;
+            // 
+            // labelControl23
+            // 
+            this.labelControl23.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl23.Appearance.Options.UseFont = true;
+            this.tablePanel9.SetColumn(this.labelControl23, 0);
+            this.labelControl23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl23.Location = new System.Drawing.Point(3, 28);
+            this.labelControl23.Name = "labelControl23";
+            this.tablePanel9.SetRow(this.labelControl23, 1);
+            this.labelControl23.Size = new System.Drawing.Size(243, 19);
+            this.labelControl23.TabIndex = 15;
+            this.labelControl23.Text = "AD SOYAD";
+            // 
+            // bilet
+            // 
+            this.tablePanel9.SetColumn(this.bilet, 0);
+            this.bilet.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F)});
+            this.bilet.Controls.Add(this.koltukNo);
+            this.bilet.Controls.Add(this.labelControl22);
+            this.bilet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bilet.Location = new System.Drawing.Point(0, 0);
+            this.bilet.Margin = new System.Windows.Forms.Padding(0);
+            this.bilet.Name = "bilet";
+            this.tablePanel9.SetRow(this.bilet, 0);
+            this.bilet.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
+            this.bilet.Size = new System.Drawing.Size(249, 25);
+            this.bilet.TabIndex = 13;
+            // 
+            // koltukNo
+            // 
+            this.koltukNo.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.koltukNo.Appearance.Options.UseFont = true;
+            this.bilet.SetColumn(this.koltukNo, 1);
+            this.koltukNo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.koltukNo.Location = new System.Drawing.Point(128, 3);
+            this.koltukNo.Name = "koltukNo";
+            this.bilet.SetRow(this.koltukNo, 0);
+            this.koltukNo.Size = new System.Drawing.Size(119, 19);
+            this.koltukNo.TabIndex = 15;
+            this.koltukNo.Text = "SEÇİLMEDİ";
+            // 
+            // labelControl22
+            // 
+            this.labelControl22.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl22.Appearance.Options.UseFont = true;
+            this.bilet.SetColumn(this.labelControl22, 0);
+            this.labelControl22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl22.Location = new System.Drawing.Point(3, 3);
+            this.labelControl22.Name = "labelControl22";
+            this.bilet.SetRow(this.labelControl22, 0);
+            this.labelControl22.Size = new System.Drawing.Size(119, 19);
+            this.labelControl22.TabIndex = 14;
+            this.labelControl22.Text = "KOLTUK";
+            // 
+            // adSoyad
+            // 
+            this.tablePanel9.SetColumn(this.adSoyad, 0);
+            this.adSoyad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.adSoyad.Location = new System.Drawing.Point(0, 50);
+            this.adSoyad.Margin = new System.Windows.Forms.Padding(0);
+            this.adSoyad.Name = "adSoyad";
+            this.tablePanel9.SetRow(this.adSoyad, 2);
+            this.adSoyad.Size = new System.Drawing.Size(249, 25);
+            this.adSoyad.TabIndex = 12;
+            // 
             // satisBtn
             // 
             this.tablePanel9.SetColumn(this.satisBtn, 0);
             this.satisBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.satisBtn.Location = new System.Drawing.Point(3, 143);
+            this.satisBtn.Location = new System.Drawing.Point(0, 151);
+            this.satisBtn.Margin = new System.Windows.Forms.Padding(0);
             this.satisBtn.Name = "satisBtn";
             this.tablePanel9.SetRow(this.satisBtn, 4);
-            this.satisBtn.Size = new System.Drawing.Size(243, 31);
+            this.satisBtn.Size = new System.Drawing.Size(249, 26);
             this.satisBtn.TabIndex = 11;
             this.satisBtn.Text = "SATIŞ YAP";
             this.satisBtn.UseVisualStyleBackColor = true;
             this.satisBtn.Click += new System.EventHandler(this.satisBtn_Click);
             // 
-            // tableLayoutPanel1
+            // tablePanel11
             // 
-            this.tablePanel8.SetColumn(this.tableLayoutPanel1, 0);
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tablePanel8.SetRow(this.tableLayoutPanel1, 0);
-            this.tableLayoutPanel1.RowCount = 15;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(352, 370);
-            this.tableLayoutPanel1.TabIndex = 8;
+            this.tablePanel9.SetColumn(this.tablePanel11, 0);
+            this.tablePanel11.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F)});
+            this.tablePanel11.Controls.Add(this.biletFiyat);
+            this.tablePanel11.Controls.Add(this.labelControl25);
+            this.tablePanel11.Controls.Add(this.labelControl24);
+            this.tablePanel11.Controls.Add(this.labelControl26);
+            this.tablePanel11.Controls.Add(this.biletPlaka);
+            this.tablePanel11.Controls.Add(this.biletKaptan);
+            this.tablePanel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel11.Location = new System.Drawing.Point(0, 75);
+            this.tablePanel11.Margin = new System.Windows.Forms.Padding(0);
+            this.tablePanel11.Name = "tablePanel11";
+            this.tablePanel9.SetRow(this.tablePanel11, 3);
+            this.tablePanel11.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
+            this.tablePanel11.Size = new System.Drawing.Size(249, 76);
+            this.tablePanel11.TabIndex = 13;
+            // 
+            // biletFiyat
+            // 
+            this.biletFiyat.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.biletFiyat.Appearance.Options.UseFont = true;
+            this.tablePanel11.SetColumn(this.biletFiyat, 1);
+            this.biletFiyat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.biletFiyat.Location = new System.Drawing.Point(128, 3);
+            this.biletFiyat.Name = "biletFiyat";
+            this.tablePanel11.SetRow(this.biletFiyat, 0);
+            this.biletFiyat.Size = new System.Drawing.Size(119, 20);
+            this.biletFiyat.TabIndex = 15;
+            // 
+            // labelControl25
+            // 
+            this.labelControl25.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl25.Appearance.Options.UseFont = true;
+            this.tablePanel11.SetColumn(this.labelControl25, 0);
+            this.labelControl25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl25.Location = new System.Drawing.Point(3, 3);
+            this.labelControl25.Name = "labelControl25";
+            this.tablePanel11.SetRow(this.labelControl25, 0);
+            this.labelControl25.Size = new System.Drawing.Size(119, 20);
+            this.labelControl25.TabIndex = 14;
+            this.labelControl25.Text = "FİYAT";
+            // 
+            // labelControl24
+            // 
+            this.labelControl24.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl24.Appearance.Options.UseFont = true;
+            this.tablePanel11.SetColumn(this.labelControl24, 0);
+            this.labelControl24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl24.Location = new System.Drawing.Point(3, 29);
+            this.labelControl24.Name = "labelControl24";
+            this.tablePanel11.SetRow(this.labelControl24, 1);
+            this.labelControl24.Size = new System.Drawing.Size(119, 20);
+            this.labelControl24.TabIndex = 14;
+            this.labelControl24.Text = "PLAKA";
+            // 
+            // labelControl26
+            // 
+            this.labelControl26.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl26.Appearance.Options.UseFont = true;
+            this.tablePanel11.SetColumn(this.labelControl26, 0);
+            this.labelControl26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl26.Location = new System.Drawing.Point(3, 55);
+            this.labelControl26.Name = "labelControl26";
+            this.tablePanel11.SetRow(this.labelControl26, 2);
+            this.labelControl26.Size = new System.Drawing.Size(119, 20);
+            this.labelControl26.TabIndex = 14;
+            this.labelControl26.Text = "KAPTAN";
+            // 
+            // biletPlaka
+            // 
+            this.biletPlaka.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.biletPlaka.Appearance.Options.UseFont = true;
+            this.tablePanel11.SetColumn(this.biletPlaka, 1);
+            this.biletPlaka.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.biletPlaka.Location = new System.Drawing.Point(128, 29);
+            this.biletPlaka.Name = "biletPlaka";
+            this.tablePanel11.SetRow(this.biletPlaka, 1);
+            this.biletPlaka.Size = new System.Drawing.Size(119, 20);
+            this.biletPlaka.TabIndex = 14;
+            // 
+            // biletKaptan
+            // 
+            this.biletKaptan.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.biletKaptan.Appearance.Options.UseFont = true;
+            this.tablePanel11.SetColumn(this.biletKaptan, 1);
+            this.biletKaptan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.biletKaptan.Location = new System.Drawing.Point(128, 55);
+            this.biletKaptan.Name = "biletKaptan";
+            this.tablePanel11.SetRow(this.biletKaptan, 2);
+            this.biletKaptan.Size = new System.Drawing.Size(119, 20);
+            this.biletKaptan.TabIndex = 14;
+            // 
+            // biletKoltukPanel
+            // 
+            this.tablePanel8.SetColumn(this.biletKoltukPanel, 0);
+            this.biletKoltukPanel.ColumnCount = 4;
+            this.biletKoltukPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.biletKoltukPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.biletKoltukPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.biletKoltukPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.biletKoltukPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.biletKoltukPanel.Location = new System.Drawing.Point(3, 3);
+            this.biletKoltukPanel.Name = "biletKoltukPanel";
+            this.tablePanel8.SetRow(this.biletKoltukPanel, 0);
+            this.biletKoltukPanel.RowCount = 15;
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.biletKoltukPanel.Size = new System.Drawing.Size(352, 370);
+            this.biletKoltukPanel.TabIndex = 8;
             // 
             // tablePanel4
             // 
             this.tablePanel4.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 25F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 75F)});
+            this.tablePanel4.Controls.Add(this.biletSaat);
             this.tablePanel4.Controls.Add(this.koltukListele);
             this.tablePanel4.Controls.Add(this.tablePanel7);
             this.tablePanel4.Controls.Add(this.labelControl19);
             this.tablePanel4.Controls.Add(this.biletTarih);
             this.tablePanel4.Controls.Add(this.labelControl20);
             this.tablePanel4.Controls.Add(this.labelControl21);
-            this.tablePanel4.Controls.Add(this.biletSaat);
             this.tablePanel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.tablePanel4.Location = new System.Drawing.Point(0, 0);
             this.tablePanel4.Margin = new System.Windows.Forms.Padding(4);
@@ -1088,6 +1283,20 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F)});
             this.tablePanel4.Size = new System.Drawing.Size(613, 186);
             this.tablePanel4.TabIndex = 7;
+            // 
+            // biletSaat
+            // 
+            this.tablePanel4.SetColumn(this.biletSaat, 1);
+            this.biletSaat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.biletSaat.Location = new System.Drawing.Point(156, 106);
+            this.biletSaat.Name = "biletSaat";
+            this.biletSaat.Properties.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F);
+            this.biletSaat.Properties.Appearance.Options.UseFont = true;
+            this.biletSaat.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.tablePanel4.SetRow(this.biletSaat, 2);
+            this.biletSaat.Size = new System.Drawing.Size(454, 35);
+            this.biletSaat.TabIndex = 10;
             // 
             // koltukListele
             // 
@@ -1231,6 +1440,7 @@
             this.tablePanel4.SetRow(this.biletTarih, 1);
             this.biletTarih.Size = new System.Drawing.Size(452, 33);
             this.biletTarih.TabIndex = 3;
+            this.biletTarih.EditValueChanged += new System.EventHandler(this.biletTarih_EditValueChanged);
             // 
             // labelControl20
             // 
@@ -1428,157 +1638,6 @@
             this.seferGelirButton.Text = "Sefer Gelir Hesaplama";
             this.seferGelirButton.Click += new System.EventHandler(this.seferGelirButton_Click);
             // 
-            // biletSaat
-            // 
-            this.tablePanel4.SetColumn(this.biletSaat, 1);
-            this.biletSaat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.biletSaat.EditValue = null;
-            this.biletSaat.Location = new System.Drawing.Point(157, 107);
-            this.biletSaat.Margin = new System.Windows.Forms.Padding(4);
-            this.biletSaat.Name = "biletSaat";
-            this.biletSaat.Properties.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.biletSaat.Properties.Appearance.Options.UseFont = true;
-            this.biletSaat.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.biletSaat.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.tablePanel4.SetRow(this.biletSaat, 2);
-            this.biletSaat.Size = new System.Drawing.Size(452, 33);
-            this.biletSaat.TabIndex = 3;
-            // 
-            // tablePanel9
-            // 
-            this.tablePanel8.SetColumn(this.tablePanel9, 1);
-            this.tablePanel9.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F)});
-            this.tablePanel9.Controls.Add(this.labelControl23);
-            this.tablePanel9.Controls.Add(this.tablePanel10);
-            this.tablePanel9.Controls.Add(this.adSoyad);
-            this.tablePanel9.Controls.Add(this.satisBtn);
-            this.tablePanel9.Controls.Add(this.tablePanel11);
-            this.tablePanel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tablePanel9.Location = new System.Drawing.Point(361, 3);
-            this.tablePanel9.Name = "tablePanel9";
-            this.tablePanel8.SetRow(this.tablePanel9, 0);
-            this.tablePanel9.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F)});
-            this.tablePanel9.Size = new System.Drawing.Size(249, 177);
-            this.tablePanel9.TabIndex = 12;
-            // 
-            // adSoyad
-            // 
-            this.tablePanel9.SetColumn(this.adSoyad, 0);
-            this.adSoyad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.adSoyad.Location = new System.Drawing.Point(3, 73);
-            this.adSoyad.Name = "adSoyad";
-            this.tablePanel9.SetRow(this.adSoyad, 2);
-            this.adSoyad.Size = new System.Drawing.Size(243, 29);
-            this.adSoyad.TabIndex = 12;
-            // 
-            // tablePanel10
-            // 
-            this.tablePanel9.SetColumn(this.tablePanel10, 0);
-            this.tablePanel10.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F)});
-            this.tablePanel10.Controls.Add(this.koltukNo);
-            this.tablePanel10.Controls.Add(this.labelControl22);
-            this.tablePanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel10.Location = new System.Drawing.Point(0, 0);
-            this.tablePanel10.Margin = new System.Windows.Forms.Padding(0);
-            this.tablePanel10.Name = "tablePanel10";
-            this.tablePanel9.SetRow(this.tablePanel10, 0);
-            this.tablePanel10.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
-            this.tablePanel10.Size = new System.Drawing.Size(249, 35);
-            this.tablePanel10.TabIndex = 13;
-            // 
-            // labelControl22
-            // 
-            this.labelControl22.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
-            this.labelControl22.Appearance.Options.UseFont = true;
-            this.tablePanel10.SetColumn(this.labelControl22, 0);
-            this.labelControl22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl22.Location = new System.Drawing.Point(3, 3);
-            this.labelControl22.Name = "labelControl22";
-            this.tablePanel10.SetRow(this.labelControl22, 0);
-            this.labelControl22.Size = new System.Drawing.Size(119, 29);
-            this.labelControl22.TabIndex = 14;
-            this.labelControl22.Text = "KOLTUK";
-            // 
-            // koltukNo
-            // 
-            this.koltukNo.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
-            this.koltukNo.Appearance.Options.UseFont = true;
-            this.tablePanel10.SetColumn(this.koltukNo, 1);
-            this.koltukNo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.koltukNo.Location = new System.Drawing.Point(128, 3);
-            this.koltukNo.Name = "koltukNo";
-            this.tablePanel10.SetRow(this.koltukNo, 0);
-            this.koltukNo.Size = new System.Drawing.Size(119, 29);
-            this.koltukNo.TabIndex = 15;
-            this.koltukNo.Text = "SEÇİLMEDİ";
-            // 
-            // labelControl23
-            // 
-            this.labelControl23.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
-            this.labelControl23.Appearance.Options.UseFont = true;
-            this.tablePanel9.SetColumn(this.labelControl23, 0);
-            this.labelControl23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl23.Location = new System.Drawing.Point(3, 38);
-            this.labelControl23.Name = "labelControl23";
-            this.tablePanel9.SetRow(this.labelControl23, 1);
-            this.labelControl23.Size = new System.Drawing.Size(243, 29);
-            this.labelControl23.TabIndex = 15;
-            this.labelControl23.Text = "AD SOYAD";
-            // 
-            // tablePanel11
-            // 
-            this.tablePanel9.SetColumn(this.tablePanel11, 0);
-            this.tablePanel11.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F)});
-            this.tablePanel11.Controls.Add(this.biletFiyat);
-            this.tablePanel11.Controls.Add(this.labelControl25);
-            this.tablePanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel11.Location = new System.Drawing.Point(0, 105);
-            this.tablePanel11.Margin = new System.Windows.Forms.Padding(0);
-            this.tablePanel11.Name = "tablePanel11";
-            this.tablePanel9.SetRow(this.tablePanel11, 3);
-            this.tablePanel11.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
-            this.tablePanel11.Size = new System.Drawing.Size(249, 35);
-            this.tablePanel11.TabIndex = 13;
-            // 
-            // biletFiyat
-            // 
-            this.biletFiyat.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
-            this.biletFiyat.Appearance.Options.UseFont = true;
-            this.tablePanel11.SetColumn(this.biletFiyat, 1);
-            this.biletFiyat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.biletFiyat.Location = new System.Drawing.Point(128, 3);
-            this.biletFiyat.Name = "biletFiyat";
-            this.tablePanel11.SetRow(this.biletFiyat, 0);
-            this.biletFiyat.Size = new System.Drawing.Size(119, 29);
-            this.biletFiyat.TabIndex = 15;
-            // 
-            // labelControl25
-            // 
-            this.labelControl25.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
-            this.labelControl25.Appearance.Options.UseFont = true;
-            this.tablePanel11.SetColumn(this.labelControl25, 0);
-            this.labelControl25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl25.Location = new System.Drawing.Point(3, 3);
-            this.labelControl25.Name = "labelControl25";
-            this.tablePanel11.SetRow(this.labelControl25, 0);
-            this.labelControl25.Size = new System.Drawing.Size(119, 29);
-            this.labelControl25.TabIndex = 14;
-            this.labelControl25.Text = "FİYAT";
-            // 
             // Form1
             // 
             this.Appearance.Options.UseFont = true;
@@ -1640,9 +1699,20 @@
             this.biletSatisPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel8)).EndInit();
             this.tablePanel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel9)).EndInit();
+            this.tablePanel9.ResumeLayout(false);
+            this.tablePanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bilet)).EndInit();
+            this.bilet.ResumeLayout(false);
+            this.bilet.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.adSoyad.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel11)).EndInit();
+            this.tablePanel11.ResumeLayout(false);
+            this.tablePanel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).EndInit();
             this.tablePanel4.ResumeLayout(false);
             this.tablePanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.biletSaat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel7)).EndInit();
             this.tablePanel7.ResumeLayout(false);
             this.tablePanel7.PerformLayout();
@@ -1651,18 +1721,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.biletTarih.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.biletTarih.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.biletSaat.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.biletSaat.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel9)).EndInit();
-            this.tablePanel9.ResumeLayout(false);
-            this.tablePanel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.adSoyad.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel10)).EndInit();
-            this.tablePanel10.ResumeLayout(false);
-            this.tablePanel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel11)).EndInit();
-            this.tablePanel11.ResumeLayout(false);
-            this.tablePanel11.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1739,20 +1797,24 @@
         private DevExpress.XtraEditors.LabelControl labelControl19;
         private DevExpress.XtraEditors.DateEdit biletTarih;
         private DevExpress.XtraEditors.LabelControl labelControl20;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel biletKoltukPanel;
         private DevExpress.XtraEditors.LabelControl labelControl21;
         private DevExpress.Utils.Layout.TablePanel tablePanel8;
         private System.Windows.Forms.Button satisBtn;
-        private DevExpress.XtraEditors.DateEdit biletSaat;
         private DevExpress.Utils.Layout.TablePanel tablePanel9;
         private DevExpress.XtraEditors.TextEdit adSoyad;
-        private DevExpress.Utils.Layout.TablePanel tablePanel10;
+        private DevExpress.Utils.Layout.TablePanel bilet;
         private DevExpress.XtraEditors.LabelControl koltukNo;
         private DevExpress.XtraEditors.LabelControl labelControl22;
         private DevExpress.XtraEditors.LabelControl labelControl23;
         private DevExpress.Utils.Layout.TablePanel tablePanel11;
         private DevExpress.XtraEditors.LabelControl biletFiyat;
         private DevExpress.XtraEditors.LabelControl labelControl25;
+        private DevExpress.XtraEditors.ComboBoxEdit biletSaat;
+        private DevExpress.XtraEditors.LabelControl labelControl24;
+        private DevExpress.XtraEditors.LabelControl labelControl26;
+        private DevExpress.XtraEditors.LabelControl biletPlaka;
+        private DevExpress.XtraEditors.LabelControl biletKaptan;
     }
 }
 

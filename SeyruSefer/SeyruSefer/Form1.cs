@@ -12,6 +12,7 @@ using DevExpress.XtraReports.UI;
 using DevExpress.XtraBars.Ribbon.ViewInfo;
 using DevExpress.Utils.Drawing;
 using DevExpress.XtraEditors;
+using DevExpress.Utils.Helpers;
 
 namespace SeyruSefer
 {
@@ -22,8 +23,8 @@ namespace SeyruSefer
             InitializeComponent();
 
         }
-         string yol = @"C:\Users\C\Desktop\PROJE\SeyruSefer\SeyruSefer\seferler\";
-      //  string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
+        // string yol = @"C:\Users\C\Desktop\PROJE\SeyruSefer\SeyruSefer\seferler\";
+        string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
         #region Sayfa Kontrolü
         int sefersirano = 0;
         int seferbitisno = 0;
@@ -313,12 +314,10 @@ namespace SeyruSefer
         {
             //Formda saat kısmına tarih koymussun sildim ama saat bulamadım onuda düzeltirsin dsadasd :)
             string koltuk = "Koltuk" + koltukNo.Text;
-            string saat = "01:00";
-            string AdSoyad = "Cüneyt Yazıcı";
-            string seferbaslangiç = "İstanbul";
-            string seferbitis = "Kocaeli";
+            string AdSoyad = adSoyad.Text;
+            string seferbaslangiç = biletBas.Text;
+            string seferbitis = biletHedef.Text;
             //Yukarıdaki veriler formdan gelecek
-            int guncellenecekkoltuksirasi = 0;
             int saatsirano = 0;
             ArrayList tumVeriler = new ArrayList();
             string dosyaAdi = biletTarih.Text + ".txt";
@@ -350,7 +349,7 @@ namespace SeyruSefer
 
                 for (int i = saatsirano; i < verimiktari; i++)
                 {
-                    if (tumVeriler[i].ToString() == "Saat: " + saat)
+                    if (tumVeriler[i].ToString() == biletSaat.Text)
                     {
                         saatsirano = i;
                         break;
@@ -380,7 +379,6 @@ namespace SeyruSefer
 
             }
             
-            MessageBox.Show(saatsirano.ToString());
 
             System.IO.File.Delete(yol + biletTarih.Text + ".txt");
             for (int i = 0; i < tumVeriler.Count; i++)
@@ -389,12 +387,123 @@ namespace SeyruSefer
             }
 
 
-
+            koltukListele_Click(sender,e);
         }
 
         private void koltukListele_Click(object sender, EventArgs e)
         {
+            biletKoltukPanel.Controls.Clear();
+            ArrayList tumVeriler = new ArrayList();
+            string dosyaAdi = biletTarih.Text + ".txt";
+            string dosya = yol + dosyaAdi;
+            FileStream fs;
+            if (File.Exists(dosya) == true)
+            {
+                fs = new FileStream(dosya, FileMode.Open, FileAccess.Read);
+                StreamReader sw = new StreamReader(fs);
+                string yazi = sw.ReadLine();
+                while (yazi != null)
+                {
+                    tumVeriler.Add(yazi);
+                    yazi = sw.ReadLine();
+                }
+                sw.Close();
+                fs.Close();
+            }
+            else
+            {
+                MessageBox.Show("Bu tarihe ait herhangi bir sefer kaydı bulunamadı");
+            }
+            ArrayList biletKoltuk = new ArrayList();
+            for (int i = 0; i < tumVeriler.Count; i++)
+            {
+                if (tumVeriler[i].ToString() == "Sefer Başlangıç:" + biletBas.Text &&
+                    tumVeriler[i + 1].ToString() == "Sefer Varış:" + biletHedef.Text &&
+                    tumVeriler[i + 3].ToString() == biletSaat.Text)
+                {
+                    biletKoltuk.Clear();
+                    biletPlaka.Text = tumVeriler[i + 5].ToString().Substring(6, tumVeriler[i + 5].ToString().Length-6);
+                    biletKaptan.Text = tumVeriler[i + 6].ToString().Substring(7, tumVeriler[i + 6].ToString().Length-7);
+                    biletFiyat.Text = tumVeriler[i + 7].ToString().Substring(14, tumVeriler[i + 7].ToString().Length-14);
+                    for (int j = i + 8; j <= tumVeriler.Count; j++)
+                    {
+                        if (tumVeriler[j].ToString().IndexOf("Koltuk") == 0)
+                            biletKoltuk.Add(tumVeriler[j]);
+                        else
+                            break;
+                    }
+                }
+            }
 
+                    for (int j = 0; j < biletKoltuk.Count; j++)
+                        //sıradaki sefere gelene kadarki bütün koltukları listele(göstermek için kullancaz)
+                        //daha sonra bilet satışı için kullancaz aynı kodu bu sefer butonlara event ekleyicez tıklanabilcek
+                        //http://www.gorselprogramlama.com/kod-ile-buton-olusturma-c-net/
+                        if (biletKoltuk[j].ToString().IndexOf("Koltuk") == 0)
+                        {
+
+                            Button a = new Button();
+                            a.Top = 10 * j;
+                            a.Text = biletKoltuk[j].ToString();
+                            if (a.Text.Substring((a.Text.IndexOf(":") + 1), 3) == "Boş")
+                                a.BackgroundImage = iconlar.Items[0].ImageOptions.Image;
+                            else
+                                a.BackgroundImage = iconlar.Items[1].ImageOptions.Image;
+                            a.BackgroundImageLayout = ImageLayout.Stretch;
+                            a.Parent = biletKoltukPanel;
+                            a.Dock = DockStyle.Fill;
+                            a.Click += new EventHandler(biletsat);
+                        }
+                        else
+                            break;
+                
+            
+        }
+        private void biletsat(object sender,EventArgs e)
+        {
+            Button dinamikButon = (sender as Button);
+            koltukNo.Text = dinamikButon.Text.Substring(6, (dinamikButon.Text.IndexOf(":") -6));
+        }
+        private void biletTarih_EditValueChanged(object sender, EventArgs e)
+        {
+            biletSaat.Properties.Items.Clear();
+            biletKoltukPanel.Controls.Clear();
+            if (biletBas.Text=="" || biletHedef.Text=="")
+            {
+                MessageBox.Show("Önce güzergah seçiniz");
+            }
+                else 
+                {
+                ArrayList tumVeriler = new ArrayList();
+                string dosyaAdi = biletTarih.Text + ".txt";
+                string dosya = yol + dosyaAdi;
+                FileStream fs;
+                if (File.Exists(dosya) == true)
+                {
+                    fs = new FileStream(dosya, FileMode.Open, FileAccess.Read);
+                    StreamReader sw = new StreamReader(fs);
+                    string yazi = sw.ReadLine();
+                    while (yazi != null)
+                    {
+                        tumVeriler.Add(yazi);
+                        yazi = sw.ReadLine();
+                    }
+                    sw.Close();
+                    fs.Close();
+                    for(int i=0; i<tumVeriler.Count;i++)
+                    {
+                        if(tumVeriler[i].ToString()== "Sefer Başlangıç:"+biletBas.Text && tumVeriler[i + 1].ToString() == "Sefer Varış:" + biletHedef.Text)
+                        {
+                            biletSaat.Properties.Items.Add(tumVeriler[i + 3]); 
+                        }
+                    }
+                }
+                else
+                {                    
+                    MessageBox.Show("Bu tarihe ait herhangi bir sefer kaydı bulunamadı");
+                }
+
+            }
         }
     }
 }

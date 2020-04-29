@@ -73,16 +73,6 @@ namespace SeyruSefer.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap person_60px2 {
-            get {
-                object obj = ResourceManager.GetObject("person_60px2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
         internal static System.Drawing.Bitmap person_60px3 {
             get {
                 object obj = ResourceManager.GetObject("person_60px3", resourceCulture);

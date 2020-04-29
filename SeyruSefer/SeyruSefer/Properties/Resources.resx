@@ -121,9 +121,6 @@
   <data name="person_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="person_60px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\person_60px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="person_60px3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person_60px3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
