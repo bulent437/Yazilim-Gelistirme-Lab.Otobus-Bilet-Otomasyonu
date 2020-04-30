@@ -15,6 +15,8 @@
 
 
 
+
+
 Sefer No:2
 Sefer Başlangıç:İstanbul
 Sefer Varış:Kocaeli
@@ -80,7 +82,7 @@ Kapasite: 46
 Plaka: 
 Kaptan: 
 Bilet Fiyatı :
-Koltuk1:Dolu Sen
+Koltuk1:Boş
 Koltuk2:Dolu Jr Cüno
 Koltuk3:Boş
 Koltuk4:Boş
@@ -106,7 +108,7 @@ Koltuk23:Boş
 Koltuk24:Boş
 Koltuk25:Boş
 Koltuk26:Boş
-Koltuk27:Dolu Bilent Api
+Koltuk27:Boş
 Koltuk28:Boş
 Koltuk29:Boş
 Koltuk30:Boş

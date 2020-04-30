@@ -24,8 +24,8 @@ namespace SeyruSefer
 
         }
         string guntarih = DateTime.Now.ToString("dd.MM.yyyy");
-         string yol = @"C:\Users\C\Desktop\proje\SeyruSefer\SeyruSefer\seferler\";
-       // string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
+       // string yol = @"C:\Users\C\source\repos\YazGel\SeyruSefer\SeyruSefer\seferler\";
+        string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
         #region Sayfa Kontrolü
         int sefersirano = 0;
         int seferbitisno = 0;
@@ -102,7 +102,7 @@ namespace SeyruSefer
            
             
         
-            if (koltuksayisi <= 0 || koltuksayisi == null)
+            if (koltuksayisi <= 0)
             {
                 MessageBox.Show("Araç kapasitesi 0 dan büyük olmalıdır");
                 string dosyaLog = yol + guntarih+"Log.txt";
@@ -136,8 +136,10 @@ namespace SeyruSefer
         #endregion
         #region Sefer Listeleme
         ArrayList SeferKoltuk =new ArrayList();
+        ArrayList Listelemeler = new ArrayList();
         private void seferGetirButton_Click(object sender, EventArgs e)
         {
+            Listelemeler.Clear();
             SeferKoltuk.Clear();
             sefericerikListele.Properties.Items.Clear();
             ArrayList Seferler = new ArrayList();
@@ -162,6 +164,7 @@ namespace SeyruSefer
                     {
                         SeferKoltuk.Add(yazi);
                     }
+                    Listelemeler.Add(yazi);
                     yazi = sw.ReadLine();
 
                 }
@@ -185,10 +188,9 @@ namespace SeyruSefer
            
 
         }
-        int biletfiyati = 50;
-        int bilett=0;
         private void seferListeleButton_Click(object sender, EventArgs e)
         {
+            int dolusayaci = 0;           
             SeferToplamKazancLbL.Text = "";
             seferListeleKoltukPanel.Controls.Clear();
             for (int i = 0; i < SeferKoltuk.Count; i++) 
@@ -212,18 +214,35 @@ namespace SeyruSefer
                             if (a.Text.Substring((a.Text.IndexOf(":") + 1), 3) == "Boş")
                                 a.BackgroundImage = iconlar.Items[0].ImageOptions.Image;
                             else
-                        bilett = biletfiyati+bilett ;
-                        a.BackgroundImage = iconlar.Items[1].ImageOptions.Image;
-                        a.BackgroundImageLayout = ImageLayout.Stretch;
+                            {
+                                dolusayaci++;
+                                a.BackgroundImage = iconlar.Items[1].ImageOptions.Image;
+                            }
+                            a.BackgroundImageLayout = ImageLayout.Stretch;
                         a.Parent = seferListeleKoltukPanel;
                         a.Dock = DockStyle.Fill;
 
                     }
                     else
                         break;
-                    SeferToplamKazancLbL.Text = bilett.ToString();
+                    
                 }
             }
+            for (int i = 0; i < Listelemeler.Count; i++)
+            {
+                if (Listelemeler[i].ToString() == sefericerikListele.Text)//seçilen sefer ile textden aldığımız sefer eşleşince içinde tekrar döngü oluşturucaz
+                {
+                    SeferBaslangicLbL.Text = Listelemeler[i + 1].ToString().Substring((Listelemeler[i + 1].ToString().IndexOf(":") + 1));
+                    SeferVarişLbL.Text= Listelemeler[i + 2].ToString().Substring((Listelemeler[i + 2].ToString().IndexOf(":") + 1));
+                    SeferTarihLbL.Text= Listelemeler[i + 3].ToString().Substring((Listelemeler[i + 3].ToString().IndexOf(":") + 1));
+                    SeferSaatLbL.Text = Listelemeler[i + 4].ToString().Substring((Listelemeler[i + 4].ToString().IndexOf(":") + 1));
+                    SeferKapasiteLbL.Text = Listelemeler[i + 5].ToString().Substring((Listelemeler[i + 5].ToString().IndexOf(":") + 1));
+                    SeferPlakaLbL.Text = Listelemeler[i + 6].ToString().Substring((Listelemeler[i + 6].ToString().IndexOf(":") + 1));
+                    SeferKaptanLbL.Text = Listelemeler[i + 7].ToString().Substring((Listelemeler[i + 7].ToString().IndexOf(":") + 1));
+                    SeferBiletFiyatiLbL.Text = Listelemeler[i + 8].ToString().Substring((Listelemeler[i + 8].ToString().IndexOf(":") + 1));
+                }
+            }
+                SeferToplamKazancLbL.Text = (dolusayaci*Convert.ToInt32(SeferBiletFiyatiLbL.Text)).ToString();
         }
         #endregion
         #region Sefer Silme
