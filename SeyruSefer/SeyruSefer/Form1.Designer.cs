@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions13 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
-            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions14 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
+            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions1 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
+            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions2 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.pageControl = new DevExpress.XtraBars.Navigation.NavigationFrame();
@@ -728,7 +728,6 @@
             // 
             // kaptanDegistirmePage
             // 
-            this.kaptanDegistirmePage.Caption = "kaptanDegistirmePage";
             this.kaptanDegistirmePage.Controls.Add(this.tablePanel5);
             this.kaptanDegistirmePage.Margin = new System.Windows.Forms.Padding(4);
             this.kaptanDegistirmePage.Name = "kaptanDegistirmePage";
@@ -929,7 +928,6 @@
             this.SeferBaslangicLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SeferBaslangicLbL.Appearance.Options.UseFont = true;
             this.SeferBaslangicLbL.Appearance.Options.UseTextOptions = true;
-            this.SeferBaslangicLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferBaslangicLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferBaslangicLbL, 1);
             this.SeferBaslangicLbL.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -945,7 +943,6 @@
             this.SeferVarişLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SeferVarişLbL.Appearance.Options.UseFont = true;
             this.SeferVarişLbL.Appearance.Options.UseTextOptions = true;
-            this.SeferVarişLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferVarişLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferVarişLbL, 1);
             this.SeferVarişLbL.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1007,7 +1004,6 @@
             this.SeferTarihLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SeferTarihLbL.Appearance.Options.UseFont = true;
             this.SeferTarihLbL.Appearance.Options.UseTextOptions = true;
-            this.SeferTarihLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferTarihLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferTarihLbL, 1);
             this.SeferTarihLbL.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1023,7 +1019,6 @@
             this.SeferSaatLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SeferSaatLbL.Appearance.Options.UseFont = true;
             this.SeferSaatLbL.Appearance.Options.UseTextOptions = true;
-            this.SeferSaatLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferSaatLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferSaatLbL, 1);
             this.SeferSaatLbL.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1071,7 +1066,6 @@
             this.SeferKapasiteLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SeferKapasiteLbL.Appearance.Options.UseFont = true;
             this.SeferKapasiteLbL.Appearance.Options.UseTextOptions = true;
-            this.SeferKapasiteLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferKapasiteLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferKapasiteLbL, 1);
             this.SeferKapasiteLbL.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1087,7 +1081,6 @@
             this.SeferPlakaLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SeferPlakaLbL.Appearance.Options.UseFont = true;
             this.SeferPlakaLbL.Appearance.Options.UseTextOptions = true;
-            this.SeferPlakaLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferPlakaLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferPlakaLbL, 1);
             this.SeferPlakaLbL.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1135,7 +1128,6 @@
             this.SeferKaptanLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SeferKaptanLbL.Appearance.Options.UseFont = true;
             this.SeferKaptanLbL.Appearance.Options.UseTextOptions = true;
-            this.SeferKaptanLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferKaptanLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferKaptanLbL, 1);
             this.SeferKaptanLbL.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1151,7 +1143,6 @@
             this.SeferBiletFiyatiLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SeferBiletFiyatiLbL.Appearance.Options.UseFont = true;
             this.SeferBiletFiyatiLbL.Appearance.Options.UseTextOptions = true;
-            this.SeferBiletFiyatiLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferBiletFiyatiLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferBiletFiyatiLbL, 1);
             this.SeferBiletFiyatiLbL.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1161,6 +1152,7 @@
             this.tablePanel12.SetRow(this.SeferBiletFiyatiLbL, 7);
             this.SeferBiletFiyatiLbL.Size = new System.Drawing.Size(110, 31);
             this.SeferBiletFiyatiLbL.TabIndex = 1;
+            this.SeferBiletFiyatiLbL.Text = "0";
             // 
             // labelControl42
             // 
@@ -1199,7 +1191,6 @@
             this.SeferToplamKazancLbL.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SeferToplamKazancLbL.Appearance.Options.UseFont = true;
             this.SeferToplamKazancLbL.Appearance.Options.UseTextOptions = true;
-            this.SeferToplamKazancLbL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SeferToplamKazancLbL.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel12.SetColumn(this.SeferToplamKazancLbL, 1);
             this.SeferToplamKazancLbL.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1966,11 +1957,11 @@
             // 
             // iconlar
             // 
-            ımageListBoxItemImageOptions13.Image = global::SeyruSefer.Properties.Resources.person_60px;
-            ımageListBoxItemImageOptions14.Image = global::SeyruSefer.Properties.Resources.person_60px3;
+            ımageListBoxItemImageOptions1.Image = global::SeyruSefer.Properties.Resources.person_60px;
+            ımageListBoxItemImageOptions2.Image = global::SeyruSefer.Properties.Resources.person_60px3;
             this.iconlar.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageListBoxItem[] {
-            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions13, null),
-            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions14, null)});
+            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions1, null),
+            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions2, null)});
             this.iconlar.Location = new System.Drawing.Point(21, 220);
             this.iconlar.Name = "iconlar";
             this.iconlar.Size = new System.Drawing.Size(67, 134);

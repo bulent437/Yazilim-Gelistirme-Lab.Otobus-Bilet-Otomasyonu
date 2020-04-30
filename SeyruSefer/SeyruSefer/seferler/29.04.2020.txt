@@ -17,6 +17,11 @@
 
 
 
+
+
+
+
+
 Sefer No:2
 Sefer Başlangıç:İstanbul
 Sefer Varış:Kocaeli
@@ -28,7 +33,7 @@ Kaptan: csa
 Bilet Fiyatı :24
 Koltuk1:Dolu Ben
 Koltuk2:Boş
-Koltuk3:Dolu dasdas
+Koltuk3:Boş
 Koltuk4:Boş
 Koltuk5:Boş
 Koltuk6:Boş
@@ -36,7 +41,7 @@ Koltuk7:Boş
 Koltuk8:Boş
 Koltuk9:Boş
 Koltuk10:Boş
-Koltuk11:Dolu Mörrem 
+Koltuk11:Boş
 Koltuk12:Boş
 Koltuk13:Boş
 Koltuk14:Boş
@@ -57,7 +62,7 @@ Koltuk28:Boş
 Koltuk29:Boş
 Koltuk30:Boş
 Koltuk31:Boş
-Koltuk32:Boş
+Koltuk32:Dolu Ahmet Mithat Efendi
 Koltuk33:Boş
 Koltuk34:Boş
 Koltuk35:Boş
