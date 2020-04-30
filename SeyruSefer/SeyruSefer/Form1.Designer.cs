@@ -103,6 +103,7 @@
             this.tablePanel8 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel9 = new DevExpress.Utils.Layout.TablePanel();
             this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
+            this.satisBtn = new DevExpress.XtraEditors.SimpleButton();
             this.bilet = new DevExpress.Utils.Layout.TablePanel();
             this.koltukNo = new DevExpress.XtraEditors.LabelControl();
             this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
@@ -114,6 +115,7 @@
             this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
             this.biletPlaka = new DevExpress.XtraEditors.LabelControl();
             this.biletKaptan = new DevExpress.XtraEditors.LabelControl();
+            this.satisSil = new DevExpress.XtraEditors.SimpleButton();
             this.biletKoltukPanel = new System.Windows.Forms.TableLayoutPanel();
             this.tablePanel4 = new DevExpress.Utils.Layout.TablePanel();
             this.biletSaat = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -135,8 +137,7 @@
             this.seferSilmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.kaptanDegistirmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.iconlar = new DevExpress.XtraEditors.ImageListBoxControl();
-            this.satisBtn = new DevExpress.XtraEditors.SimpleButton();
-            this.satisSil = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
@@ -620,6 +621,7 @@
             // 
             // seferSilmePage
             // 
+            this.seferSilmePage.Caption = "seferSilmePage";
             this.seferSilmePage.Controls.Add(this.tableKoltuk);
             this.seferSilmePage.Margin = new System.Windows.Forms.Padding(4);
             this.seferSilmePage.Name = "seferSilmePage";
@@ -743,13 +745,15 @@
             this.tablePanel5.Controls.Add(this.labelControl15);
             this.tablePanel5.Controls.Add(this.comboBoxEdit2);
             this.tablePanel5.Controls.Add(this.labelControl16);
+            this.tablePanel5.Controls.Add(this.labelControl4);
             this.tablePanel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.tablePanel5.Location = new System.Drawing.Point(0, 0);
             this.tablePanel5.Name = "tablePanel5";
             this.tablePanel5.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 70F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 79F)});
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F)});
             this.tablePanel5.Size = new System.Drawing.Size(613, 219);
             this.tablePanel5.TabIndex = 4;
             // 
@@ -757,12 +761,12 @@
             // 
             this.tablePanel5.SetColumn(this.textEdit1, 1);
             this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit1.Location = new System.Drawing.Point(310, 73);
+            this.textEdit1.Location = new System.Drawing.Point(310, 113);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.tablePanel5.SetRow(this.textEdit1, 1);
-            this.textEdit1.Size = new System.Drawing.Size(301, 64);
+            this.tablePanel5.SetRow(this.textEdit1, 2);
+            this.textEdit1.Size = new System.Drawing.Size(301, 49);
             this.textEdit1.TabIndex = 8;
             // 
             // simpleButton2
@@ -771,10 +775,10 @@
             this.simpleButton2.Appearance.Options.UseFont = true;
             this.tablePanel5.SetColumn(this.simpleButton2, 1);
             this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton2.Location = new System.Drawing.Point(310, 143);
+            this.simpleButton2.Location = new System.Drawing.Point(310, 168);
             this.simpleButton2.Name = "simpleButton2";
-            this.tablePanel5.SetRow(this.simpleButton2, 2);
-            this.simpleButton2.Size = new System.Drawing.Size(301, 73);
+            this.tablePanel5.SetRow(this.simpleButton2, 3);
+            this.simpleButton2.Size = new System.Drawing.Size(301, 48);
             this.simpleButton2.TabIndex = 4;
             this.simpleButton2.Text = "DEĞİŞTİR";
             // 
@@ -787,26 +791,26 @@
             this.labelControl15.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel5.SetColumn(this.labelControl15, 0);
             this.labelControl15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl15.Location = new System.Drawing.Point(4, 4);
+            this.labelControl15.Location = new System.Drawing.Point(4, 59);
             this.labelControl15.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl15.Name = "labelControl15";
-            this.tablePanel5.SetRow(this.labelControl15, 0);
-            this.labelControl15.Size = new System.Drawing.Size(299, 62);
+            this.tablePanel5.SetRow(this.labelControl15, 1);
+            this.labelControl15.Size = new System.Drawing.Size(299, 47);
             this.labelControl15.TabIndex = 1;
-            this.labelControl15.Text = "DEĞİŞECEK SEFERİ SEÇİN";
+            this.labelControl15.Text = "DEĞİŞECEK SEFERİ";
             // 
             // comboBoxEdit2
             // 
             this.tablePanel5.SetColumn(this.comboBoxEdit2, 1);
             this.comboBoxEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxEdit2.Location = new System.Drawing.Point(310, 3);
+            this.comboBoxEdit2.Location = new System.Drawing.Point(310, 58);
             this.comboBoxEdit2.Name = "comboBoxEdit2";
             this.comboBoxEdit2.Properties.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
             this.comboBoxEdit2.Properties.Appearance.Options.UseFont = true;
             this.comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.tablePanel5.SetRow(this.comboBoxEdit2, 0);
-            this.comboBoxEdit2.Size = new System.Drawing.Size(301, 64);
+            this.tablePanel5.SetRow(this.comboBoxEdit2, 1);
+            this.comboBoxEdit2.Size = new System.Drawing.Size(301, 49);
             this.comboBoxEdit2.TabIndex = 2;
             // 
             // labelControl16
@@ -818,11 +822,11 @@
             this.labelControl16.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel5.SetColumn(this.labelControl16, 0);
             this.labelControl16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl16.Location = new System.Drawing.Point(4, 74);
+            this.labelControl16.Location = new System.Drawing.Point(4, 114);
             this.labelControl16.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl16.Name = "labelControl16";
-            this.tablePanel5.SetRow(this.labelControl16, 1);
-            this.labelControl16.Size = new System.Drawing.Size(299, 62);
+            this.tablePanel5.SetRow(this.labelControl16, 2);
+            this.labelControl16.Size = new System.Drawing.Size(299, 47);
             this.labelControl16.TabIndex = 1;
             this.labelControl16.Text = "KAPTAN";
             // 
@@ -1409,6 +1413,21 @@
             this.labelControl23.TabIndex = 15;
             this.labelControl23.Text = "AD SOYAD";
             // 
+            // satisBtn
+            // 
+            this.satisBtn.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.satisBtn.Appearance.Options.UseFont = true;
+            this.tablePanel9.SetColumn(this.satisBtn, 0);
+            this.satisBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.satisBtn.Location = new System.Drawing.Point(0, 162);
+            this.satisBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.satisBtn.Name = "satisBtn";
+            this.tablePanel9.SetRow(this.satisBtn, 4);
+            this.satisBtn.Size = new System.Drawing.Size(249, 27);
+            this.satisBtn.TabIndex = 9;
+            this.satisBtn.Text = "Bileti Sat";
+            this.satisBtn.Click += new System.EventHandler(this.satisBtn_Click);
+            // 
             // bilet
             // 
             this.tablePanel9.SetColumn(this.bilet, 0);
@@ -1563,6 +1582,21 @@
             this.tablePanel11.SetRow(this.biletKaptan, 2);
             this.biletKaptan.Size = new System.Drawing.Size(119, 20);
             this.biletKaptan.TabIndex = 14;
+            // 
+            // satisSil
+            // 
+            this.satisSil.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.satisSil.Appearance.Options.UseFont = true;
+            this.tablePanel9.SetColumn(this.satisSil, 0);
+            this.satisSil.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.satisSil.Location = new System.Drawing.Point(0, 189);
+            this.satisSil.Margin = new System.Windows.Forms.Padding(0);
+            this.satisSil.Name = "satisSil";
+            this.tablePanel9.SetRow(this.satisSil, 5);
+            this.satisSil.Size = new System.Drawing.Size(249, 26);
+            this.satisSil.TabIndex = 9;
+            this.satisSil.Text = "Seçili Koltuğu İptal Et";
+            this.satisSil.Click += new System.EventHandler(this.satisSil_Click);
             // 
             // biletKoltukPanel
             // 
@@ -1968,35 +2002,22 @@
             this.iconlar.TabIndex = 4;
             this.iconlar.Visible = false;
             // 
-            // satisBtn
+            // labelControl4
             // 
-            this.satisBtn.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
-            this.satisBtn.Appearance.Options.UseFont = true;
-            this.tablePanel9.SetColumn(this.satisBtn, 0);
-            this.satisBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.satisBtn.Location = new System.Drawing.Point(0, 162);
-            this.satisBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.satisBtn.Name = "satisBtn";
-            this.tablePanel9.SetRow(this.satisBtn, 4);
-            this.satisBtn.Size = new System.Drawing.Size(249, 27);
-            this.satisBtn.TabIndex = 9;
-            this.satisBtn.Text = "Bileti Sat";
-            this.satisBtn.Click += new System.EventHandler(this.satisBtn_Click);
-            // 
-            // satisSil
-            // 
-            this.satisSil.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
-            this.satisSil.Appearance.Options.UseFont = true;
-            this.tablePanel9.SetColumn(this.satisSil, 0);
-            this.satisSil.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.satisSil.Location = new System.Drawing.Point(0, 189);
-            this.satisSil.Margin = new System.Windows.Forms.Padding(0);
-            this.satisSil.Name = "satisSil";
-            this.tablePanel9.SetRow(this.satisSil, 5);
-            this.satisSil.Size = new System.Drawing.Size(249, 26);
-            this.satisSil.TabIndex = 9;
-            this.satisSil.Text = "Seçili Koltuğu İptal Et";
-            this.satisSil.Click += new System.EventHandler(this.satisSil_Click);
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Appearance.Options.UseTextOptions = true;
+            this.labelControl4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl4.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel5.SetColumn(this.labelControl4, 0);
+            this.labelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl4.Location = new System.Drawing.Point(4, 4);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl4.Name = "labelControl4";
+            this.tablePanel5.SetRow(this.labelControl4, 0);
+            this.labelControl4.Size = new System.Drawing.Size(299, 47);
+            this.labelControl4.TabIndex = 1;
+            this.labelControl4.Text = "DEĞİŞECEK SEFERİN TARİHİ";
             // 
             // Form1
             // 
@@ -2196,6 +2217,7 @@
         private DevExpress.XtraEditors.SimpleButton seferleriSayButton;
         private DevExpress.XtraEditors.SimpleButton satisBtn;
         private DevExpress.XtraEditors.SimpleButton satisSil;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
     }
 }
 
