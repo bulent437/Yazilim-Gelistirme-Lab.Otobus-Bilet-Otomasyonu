@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions5 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
-            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions6 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
+            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions13 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
+            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions14 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.pageControl = new DevExpress.XtraBars.Navigation.NavigationFrame();
@@ -416,6 +416,7 @@
             this.tablePanel3.SetRow(this.seferBas, 1);
             this.seferBas.Size = new System.Drawing.Size(222, 41);
             this.seferBas.TabIndex = 1;
+            this.seferBas.SelectedIndexChanged += new System.EventHandler(this.seferBas_SelectedIndexChanged);
             // 
             // labelControl14
             // 
@@ -1646,6 +1647,7 @@
             this.koltukListele.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
             this.koltukListele.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.koltukListele, 1);
+            this.koltukListele.Dock = System.Windows.Forms.DockStyle.Fill;
             this.koltukListele.Location = new System.Drawing.Point(156, 147);
             this.koltukListele.Name = "koltukListele";
             this.tablePanel4.SetRow(this.koltukListele, 3);
@@ -1730,6 +1732,7 @@
             this.tablePanel7.SetRow(this.biletBas, 1);
             this.biletBas.Size = new System.Drawing.Size(222, 37);
             this.biletBas.TabIndex = 1;
+            this.biletBas.SelectedIndexChanged += new System.EventHandler(this.biletBas_SelectedIndexChanged);
             // 
             // labelControl6
             // 
@@ -1963,11 +1966,11 @@
             // 
             // iconlar
             // 
-            ımageListBoxItemImageOptions5.Image = global::SeyruSefer.Properties.Resources.person_60px;
-            ımageListBoxItemImageOptions6.Image = global::SeyruSefer.Properties.Resources.person_60px3;
+            ımageListBoxItemImageOptions13.Image = global::SeyruSefer.Properties.Resources.person_60px;
+            ımageListBoxItemImageOptions14.Image = global::SeyruSefer.Properties.Resources.person_60px3;
             this.iconlar.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageListBoxItem[] {
-            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions5, null),
-            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions6, null)});
+            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions13, null),
+            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions14, null)});
             this.iconlar.Location = new System.Drawing.Point(21, 220);
             this.iconlar.Name = "iconlar";
             this.iconlar.Size = new System.Drawing.Size(67, 134);

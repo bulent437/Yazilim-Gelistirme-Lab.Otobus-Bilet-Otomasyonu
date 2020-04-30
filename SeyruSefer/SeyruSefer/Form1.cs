@@ -645,6 +645,38 @@ namespace SeyruSefer
 
 
         }
+
+        private void biletBas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(biletBas.SelectedItem.ToString()=="Kocaeli")
+            {
+                biletHedef.Properties.Items.Clear();
+                biletHedef.Properties.Items.Add("İstanbul");
+                biletHedef.Properties.Items.Add("Ankara");
+                biletHedef.Properties.Items.Add("İzmir");
+            }
+            else
+            {
+                biletHedef.Properties.Items.Clear();
+                biletHedef.Properties.Items.Add("Kocaeli");
+            }
+        }
+
+        private void seferBas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (seferBas.SelectedItem.ToString() == "Kocaeli")
+            {
+                seferHedef.Properties.Items.Clear();
+                seferHedef.Properties.Items.Add("İstanbul");
+                seferHedef.Properties.Items.Add("Ankara");
+                seferHedef.Properties.Items.Add("İzmir");
+            }
+            else
+            {
+                seferHedef.Properties.Items.Clear();
+                seferHedef.Properties.Items.Add("Kocaeli");
+            }
+        }
     }
     }
 
