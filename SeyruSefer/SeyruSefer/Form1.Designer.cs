@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions5 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
-            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions6 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
+            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions3 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
+            DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions ımageListBoxItemImageOptions4 = new DevExpress.XtraEditors.Controls.ImageListBoxItemImageOptions();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.pageControl = new DevExpress.XtraBars.Navigation.NavigationFrame();
@@ -72,10 +72,12 @@
             this.seferListelemePage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tablePanel10 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel12 = new DevExpress.Utils.Layout.TablePanel();
+            this.seferlerinSayisi = new DevExpress.XtraEditors.LabelControl();
             this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
             this.SeferBaslangicLbL = new DevExpress.XtraEditors.LabelControl();
             this.SeferVarişLbL = new DevExpress.XtraEditors.LabelControl();
             this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
+            this.seferleriSayButton = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
             this.SeferTarihLbL = new DevExpress.XtraEditors.LabelControl();
             this.SeferSaatLbL = new DevExpress.XtraEditors.LabelControl();
@@ -134,8 +136,8 @@
             this.seferListelemeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.seferSilmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.kaptanDegistirmeButton = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.seferlerinSayisi = new DevExpress.XtraEditors.LabelControl();
-            this.seferleriSayButton = new DevExpress.XtraEditors.SimpleButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.satisSil = new System.Windows.Forms.Button();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
@@ -618,6 +620,7 @@
             // 
             // seferSilmePage
             // 
+            this.seferSilmePage.Controls.Add(this.button1);
             this.seferSilmePage.Controls.Add(this.iconlar);
             this.seferSilmePage.Controls.Add(this.tableKoltuk);
             this.seferSilmePage.Margin = new System.Windows.Forms.Padding(4);
@@ -626,11 +629,11 @@
             // 
             // iconlar
             // 
-            ımageListBoxItemImageOptions5.Image = global::SeyruSefer.Properties.Resources.person_60px;
-            ımageListBoxItemImageOptions6.Image = global::SeyruSefer.Properties.Resources.person_60px3;
+            ımageListBoxItemImageOptions3.Image = global::SeyruSefer.Properties.Resources.person_60px;
+            ımageListBoxItemImageOptions4.Image = global::SeyruSefer.Properties.Resources.person_60px3;
             this.iconlar.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageListBoxItem[] {
-            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions5, null),
-            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions6, null)});
+            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions3, null),
+            new DevExpress.XtraEditors.Controls.ImageListBoxItem(null, "", ımageListBoxItemImageOptions4, null)});
             this.iconlar.Location = new System.Drawing.Point(21, 220);
             this.iconlar.Name = "iconlar";
             this.iconlar.Size = new System.Drawing.Size(67, 134);
@@ -907,6 +910,19 @@
             this.tablePanel12.Size = new System.Drawing.Size(257, 391);
             this.tablePanel12.TabIndex = 2;
             // 
+            // seferlerinSayisi
+            // 
+            this.seferlerinSayisi.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.seferlerinSayisi.Appearance.Options.UseFont = true;
+            this.tablePanel12.SetColumn(this.seferlerinSayisi, 1);
+            this.seferlerinSayisi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.seferlerinSayisi.Location = new System.Drawing.Point(143, 355);
+            this.seferlerinSayisi.Margin = new System.Windows.Forms.Padding(4);
+            this.seferlerinSayisi.Name = "seferlerinSayisi";
+            this.tablePanel12.SetRow(this.seferlerinSayisi, 9);
+            this.seferlerinSayisi.Size = new System.Drawing.Size(110, 32);
+            this.seferlerinSayisi.TabIndex = 3;
+            // 
             // labelControl27
             // 
             this.labelControl27.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -968,6 +984,20 @@
             this.labelControl30.Size = new System.Drawing.Size(96, 18);
             this.labelControl30.TabIndex = 1;
             this.labelControl30.Text = "Sefer Varış:";
+            // 
+            // seferleriSayButton
+            // 
+            this.seferleriSayButton.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
+            this.seferleriSayButton.Appearance.Options.UseFont = true;
+            this.tablePanel12.SetColumn(this.seferleriSayButton, 0);
+            this.seferleriSayButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.seferleriSayButton.Location = new System.Drawing.Point(3, 354);
+            this.seferleriSayButton.Name = "seferleriSayButton";
+            this.tablePanel12.SetRow(this.seferleriSayButton, 9);
+            this.seferleriSayButton.Size = new System.Drawing.Size(133, 34);
+            this.seferleriSayButton.TabIndex = 13;
+            this.seferleriSayButton.Text = "Toplam Sefer";
+            this.seferleriSayButton.Click += new System.EventHandler(this.seferleriSayButton_Click);
             // 
             // labelControl31
             // 
@@ -1597,6 +1627,7 @@
             this.tablePanel4.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 25F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 75F)});
+            this.tablePanel4.Controls.Add(this.satisSil);
             this.tablePanel4.Controls.Add(this.biletSaat);
             this.tablePanel4.Controls.Add(this.koltukListele);
             this.tablePanel4.Controls.Add(this.tablePanel7);
@@ -1951,32 +1982,26 @@
             this.kaptanDegistirmeButton.Text = "Kaptan Değiştirme";
             this.kaptanDegistirmeButton.Click += new System.EventHandler(this.kaptanDegistirmeButton_Click);
             // 
-            // seferlerinSayisi
+            // button1
             // 
-            this.seferlerinSayisi.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
-            this.seferlerinSayisi.Appearance.Options.UseFont = true;
-            this.tablePanel12.SetColumn(this.seferlerinSayisi, 1);
-            this.seferlerinSayisi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.seferlerinSayisi.Location = new System.Drawing.Point(143, 355);
-            this.seferlerinSayisi.Margin = new System.Windows.Forms.Padding(4);
-            this.seferlerinSayisi.Name = "seferlerinSayisi";
-            this.tablePanel12.SetRow(this.seferlerinSayisi, 9);
-            this.seferlerinSayisi.Size = new System.Drawing.Size(110, 32);
-            this.seferlerinSayisi.TabIndex = 3;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // seferleriSayButton
+            // satisSil
             // 
-            this.seferleriSayButton.Appearance.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold);
-            this.seferleriSayButton.Appearance.Options.UseFont = true;
-            this.tablePanel12.SetColumn(this.seferleriSayButton, 0);
-            this.seferleriSayButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.seferleriSayButton.Location = new System.Drawing.Point(3, 354);
-            this.seferleriSayButton.Name = "seferleriSayButton";
-            this.tablePanel12.SetRow(this.seferleriSayButton, 9);
-            this.seferleriSayButton.Size = new System.Drawing.Size(133, 34);
-            this.seferleriSayButton.TabIndex = 13;
-            this.seferleriSayButton.Text = "Toplam Sefer";
-            this.seferleriSayButton.Click += new System.EventHandler(this.seferleriSayButton_Click);
+            this.tablePanel4.SetColumn(this.satisSil, 0);
+            this.satisSil.Location = new System.Drawing.Point(3, 153);
+            this.satisSil.Name = "satisSil";
+            this.tablePanel4.SetRow(this.satisSil, 3);
+            this.satisSil.Size = new System.Drawing.Size(147, 23);
+            this.satisSil.TabIndex = 0;
+            this.satisSil.Text = "SATIS SİL";
+            this.satisSil.UseVisualStyleBackColor = true;
+            this.satisSil.Click += new System.EventHandler(this.satisSil_Click);
             // 
             // Form1
             // 
@@ -2175,6 +2200,8 @@
         private System.Windows.Forms.TableLayoutPanel seferListeleKoltukPanel;
         private DevExpress.XtraEditors.LabelControl seferlerinSayisi;
         private DevExpress.XtraEditors.SimpleButton seferleriSayButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button satisSil;
     }
 }
 

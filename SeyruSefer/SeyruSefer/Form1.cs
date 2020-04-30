@@ -24,8 +24,8 @@ namespace SeyruSefer
 
         }
         string guntarih = DateTime.Now.ToString("dd.MM.yyyy");
-        string yol = @"C:\Users\C\source\repos\YazGel\SeyruSefer\SeyruSefer\seferler\";
-        //string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
+         string yol = @"C:\Users\C\Desktop\proje\SeyruSefer\SeyruSefer\seferler\";
+       // string yol = @"D:\c#\2020 YazGel1\YazGel\SeyruSefer\SeyruSefer\seferler\";
         #region Sayfa Kontrolü
         int sefersirano = 0;
         int seferbitisno = 0;
@@ -572,5 +572,60 @@ namespace SeyruSefer
             }
             seferlerinSayisi.Text = seferSayac.ToString();
         }
+
+        private void satisSil_Click(object sender, EventArgs e)
+        {
+            ArrayList tumVeriler = new ArrayList();
+            string dosyaAdi = biletTarih.Text + ".txt";
+            string dosya = yol + dosyaAdi;
+            FileStream fs;
+            if (File.Exists(dosya) == true)
+            {
+                fs = new FileStream(dosya, FileMode.Open, FileAccess.Read);
+                StreamReader sw = new StreamReader(fs);
+                string yazi = sw.ReadLine();
+                while (yazi != null)
+                {
+                    tumVeriler.Add(yazi);
+                    yazi = sw.ReadLine();
+                }
+                sw.Close();
+                fs.Close();
+            }
+            //    ArrayList biletKoltuk = new ArrayList();
+            int k = 0;
+            for (int i = 0; i < tumVeriler.Count; i++)
+            {
+                k++;
+                if (tumVeriler[i].ToString() == "Sefer Başlangıç:" + biletBas.Text &&
+                    tumVeriler[i + 1].ToString() == "Sefer Varış:" + biletHedef.Text &&
+                    tumVeriler[i + 3].ToString() == biletSaat.Text)
+                {
+                    for (int j = k; j < tumVeriler.Count; j++)
+                    {
+                        if (tumVeriler[j].ToString().IndexOf("Koltuk" + koltukNo.Text) == 0)
+                        {
+                            tumVeriler[j] = "Koltuk" + koltukNo.Text + ":Boş";
+                            break;
+                        }
+                        else if (tumVeriler[j].ToString() == "-")
+                        {
+
+                            break;
+                        }
+                    }
+                    break;
+                }
+            }
+            System.IO.File.Delete(yol + biletTarih.Text + ".txt");
+            for (int i = 0; i < tumVeriler.Count; i++)
+            {
+                File.AppendAllText(dosya, Environment.NewLine + tumVeriler[i]);
+            }
+            koltukListele_Click(sender, e);
+
+
+        }
     }
-}
+    }
+
